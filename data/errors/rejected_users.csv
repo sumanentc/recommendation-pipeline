@@ -1,0 +1,4 @@
+source_line,user_id,age,gender,occupation,zip_code,failed_rules
+945,44,26,M,technician,46260,duplicate_user_id
+946,837,36,F,artist,55409,duplicate_user_id
+947,425,19,M,student,58644,duplicate_user_id

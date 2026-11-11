@@ -1,0 +1,2037 @@
+table,source_line,rule,severity,column,value,action
+users,945,duplicate_user_id,error,user_id,44,reject later duplicates
+users,946,duplicate_user_id,error,user_id,837,reject later duplicates
+users,947,duplicate_user_id,error,user_id,425,reject later duplicates
+users,158,missing_age,warning,age,<NULL>,"set NULL, impute (median)"
+users,351,missing_age,warning,age,<NULL>,"set NULL, impute (median)"
+users,510,missing_age,warning,age,<NULL>,"set NULL, impute (median)"
+users,578,missing_age,warning,age,<NULL>,"set NULL, impute (median)"
+users,910,missing_age,warning,age,<NULL>,"set NULL, impute (median)"
+users,221,invalid_type_age,warning,age,abc,"set NULL, impute (median)"
+users,825,invalid_type_age,warning,age,abc,"set NULL, impute (median)"
+users,140,age_out_of_range,warning,age,0,"set NULL, impute (median)"
+users,300,age_out_of_range,warning,age,250,"set NULL, impute (median)"
+users,476,age_out_of_range,warning,age,250,"set NULL, impute (median)"
+users,715,age_out_of_range,warning,age,0,"set NULL, impute (median)"
+users,651,missing_gender,warning,gender,<NULL>,set to 'U' (unknown)
+users,739,missing_gender,warning,gender,<NULL>,set to 'U' (unknown)
+users,840,missing_gender,warning,gender,<NULL>,set to 'U' (unknown)
+users,846,missing_gender,warning,gender,<NULL>,set to 'U' (unknown)
+users,869,missing_gender,warning,gender,<NULL>,set to 'U' (unknown)
+users,441,invalid_gender,warning,gender,X,set to 'U' (unknown)
+users,647,invalid_gender,warning,gender,X,set to 'U' (unknown)
+users,238,missing_occupation,warning,occupation,<NULL>,set to 'unknown'
+users,773,missing_occupation,warning,occupation,<NULL>,set to 'unknown'
+users,883,missing_occupation,warning,occupation,<NULL>,set to 'unknown'
+items,1684,duplicate_item_id,error,item_id,728,reject later duplicates
+items,1685,duplicate_item_id,error,item_id,886,reject later duplicates
+items,1686,duplicate_item_id,error,item_id,48,reject later duplicates
+items,500,missing_title,warning,title,<NULL>,set to 'Unknown title'
+items,1052,missing_title,warning,title,<NULL>,set to 'Unknown title'
+items,1336,missing_title,warning,title,<NULL>,set to 'Unknown title'
+items,1599,missing_title,warning,title,<NULL>,set to 'Unknown title'
+items,352,invalid_release_date,warning,release_date,31-Foo-1990,"set NULL, impute (median year)"
+items,764,invalid_release_date,warning,release_date,not a date,"set NULL, impute (median year)"
+items,1290,invalid_release_date,warning,release_date,not a date,"set NULL, impute (median year)"
+items,1350,invalid_release_date,warning,release_date,31-Foo-1990,"set NULL, impute (median year)"
+items,1562,invalid_release_date,warning,release_date,31-Foo-1990,"set NULL, impute (median year)"
+interactions,121,missing_user_id,error,user_id,<NULL>,reject row
+interactions,233,missing_user_id,error,user_id,<NULL>,reject row
+interactions,564,missing_user_id,error,user_id,<NULL>,reject row
+interactions,782,missing_user_id,error,user_id,<NULL>,reject row
+interactions,837,missing_user_id,error,user_id,<NULL>,reject row
+interactions,1693,missing_user_id,error,user_id,<NULL>,reject row
+interactions,1875,missing_user_id,error,user_id,<NULL>,reject row
+interactions,2288,missing_user_id,error,user_id,<NULL>,reject row
+interactions,2552,missing_user_id,error,user_id,<NULL>,reject row
+interactions,3001,missing_user_id,error,user_id,<NULL>,reject row
+interactions,3470,missing_user_id,error,user_id,<NULL>,reject row
+interactions,5344,missing_user_id,error,user_id,<NULL>,reject row
+interactions,5989,missing_user_id,error,user_id,<NULL>,reject row
+interactions,6066,missing_user_id,error,user_id,<NULL>,reject row
+interactions,7325,missing_user_id,error,user_id,<NULL>,reject row
+interactions,8024,missing_user_id,error,user_id,<NULL>,reject row
+interactions,8305,missing_user_id,error,user_id,<NULL>,reject row
+interactions,8576,missing_user_id,error,user_id,<NULL>,reject row
+interactions,8660,missing_user_id,error,user_id,<NULL>,reject row
+interactions,9335,missing_user_id,error,user_id,<NULL>,reject row
+interactions,9659,missing_user_id,error,user_id,<NULL>,reject row
+interactions,10097,missing_user_id,error,user_id,<NULL>,reject row
+interactions,10396,missing_user_id,error,user_id,<NULL>,reject row
+interactions,11597,missing_user_id,error,user_id,<NULL>,reject row
+interactions,12660,missing_user_id,error,user_id,<NULL>,reject row
+interactions,13339,missing_user_id,error,user_id,<NULL>,reject row
+interactions,14004,missing_user_id,error,user_id,<NULL>,reject row
+interactions,14660,missing_user_id,error,user_id,<NULL>,reject row
+interactions,15502,missing_user_id,error,user_id,<NULL>,reject row
+interactions,18956,missing_user_id,error,user_id,<NULL>,reject row
+interactions,19531,missing_user_id,error,user_id,<NULL>,reject row
+interactions,19631,missing_user_id,error,user_id,<NULL>,reject row
+interactions,21203,missing_user_id,error,user_id,<NULL>,reject row
+interactions,21279,missing_user_id,error,user_id,<NULL>,reject row
+interactions,22364,missing_user_id,error,user_id,<NULL>,reject row
+interactions,22488,missing_user_id,error,user_id,<NULL>,reject row
+interactions,22829,missing_user_id,error,user_id,<NULL>,reject row
+interactions,23157,missing_user_id,error,user_id,<NULL>,reject row
+interactions,24284,missing_user_id,error,user_id,<NULL>,reject row
+interactions,24305,missing_user_id,error,user_id,<NULL>,reject row
+interactions,25012,missing_user_id,error,user_id,<NULL>,reject row
+interactions,25077,missing_user_id,error,user_id,<NULL>,reject row
+interactions,25834,missing_user_id,error,user_id,<NULL>,reject row
+interactions,26293,missing_user_id,error,user_id,<NULL>,reject row
+interactions,26400,missing_user_id,error,user_id,<NULL>,reject row
+interactions,26935,missing_user_id,error,user_id,<NULL>,reject row
+interactions,27368,missing_user_id,error,user_id,<NULL>,reject row
+interactions,27733,missing_user_id,error,user_id,<NULL>,reject row
+interactions,27778,missing_user_id,error,user_id,<NULL>,reject row
+interactions,28461,missing_user_id,error,user_id,<NULL>,reject row
+interactions,28540,missing_user_id,error,user_id,<NULL>,reject row
+interactions,28812,missing_user_id,error,user_id,<NULL>,reject row
+interactions,29842,missing_user_id,error,user_id,<NULL>,reject row
+interactions,29876,missing_user_id,error,user_id,<NULL>,reject row
+interactions,30378,missing_user_id,error,user_id,<NULL>,reject row
+interactions,31604,missing_user_id,error,user_id,<NULL>,reject row
+interactions,31818,missing_user_id,error,user_id,<NULL>,reject row
+interactions,32005,missing_user_id,error,user_id,<NULL>,reject row
+interactions,32727,missing_user_id,error,user_id,<NULL>,reject row
+interactions,33033,missing_user_id,error,user_id,<NULL>,reject row
+interactions,33784,missing_user_id,error,user_id,<NULL>,reject row
+interactions,35074,missing_user_id,error,user_id,<NULL>,reject row
+interactions,35278,missing_user_id,error,user_id,<NULL>,reject row
+interactions,35915,missing_user_id,error,user_id,<NULL>,reject row
+interactions,35987,missing_user_id,error,user_id,<NULL>,reject row
+interactions,36449,missing_user_id,error,user_id,<NULL>,reject row
+interactions,36777,missing_user_id,error,user_id,<NULL>,reject row
+interactions,37069,missing_user_id,error,user_id,<NULL>,reject row
+interactions,37435,missing_user_id,error,user_id,<NULL>,reject row
+interactions,37484,missing_user_id,error,user_id,<NULL>,reject row
+interactions,37911,missing_user_id,error,user_id,<NULL>,reject row
+interactions,38042,missing_user_id,error,user_id,<NULL>,reject row
+interactions,38567,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39033,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39186,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39331,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39535,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39737,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39765,missing_user_id,error,user_id,<NULL>,reject row
+interactions,39810,missing_user_id,error,user_id,<NULL>,reject row
+interactions,42304,missing_user_id,error,user_id,<NULL>,reject row
+interactions,42380,missing_user_id,error,user_id,<NULL>,reject row
+interactions,42600,missing_user_id,error,user_id,<NULL>,reject row
+interactions,43509,missing_user_id,error,user_id,<NULL>,reject row
+interactions,44179,missing_user_id,error,user_id,<NULL>,reject row
+interactions,44569,missing_user_id,error,user_id,<NULL>,reject row
+interactions,44731,missing_user_id,error,user_id,<NULL>,reject row
+interactions,44808,missing_user_id,error,user_id,<NULL>,reject row
+interactions,44830,missing_user_id,error,user_id,<NULL>,reject row
+interactions,45525,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46046,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46287,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46460,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46483,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46864,missing_user_id,error,user_id,<NULL>,reject row
+interactions,46895,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50103,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50194,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50233,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50338,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50434,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50565,missing_user_id,error,user_id,<NULL>,reject row
+interactions,50817,missing_user_id,error,user_id,<NULL>,reject row
+interactions,51518,missing_user_id,error,user_id,<NULL>,reject row
+interactions,51646,missing_user_id,error,user_id,<NULL>,reject row
+interactions,51866,missing_user_id,error,user_id,<NULL>,reject row
+interactions,52012,missing_user_id,error,user_id,<NULL>,reject row
+interactions,52176,missing_user_id,error,user_id,<NULL>,reject row
+interactions,52706,missing_user_id,error,user_id,<NULL>,reject row
+interactions,52971,missing_user_id,error,user_id,<NULL>,reject row
+interactions,53818,missing_user_id,error,user_id,<NULL>,reject row
+interactions,54104,missing_user_id,error,user_id,<NULL>,reject row
+interactions,54337,missing_user_id,error,user_id,<NULL>,reject row
+interactions,54907,missing_user_id,error,user_id,<NULL>,reject row
+interactions,55253,missing_user_id,error,user_id,<NULL>,reject row
+interactions,56308,missing_user_id,error,user_id,<NULL>,reject row
+interactions,56415,missing_user_id,error,user_id,<NULL>,reject row
+interactions,57777,missing_user_id,error,user_id,<NULL>,reject row
+interactions,58142,missing_user_id,error,user_id,<NULL>,reject row
+interactions,58287,missing_user_id,error,user_id,<NULL>,reject row
+interactions,58741,missing_user_id,error,user_id,<NULL>,reject row
+interactions,59252,missing_user_id,error,user_id,<NULL>,reject row
+interactions,59408,missing_user_id,error,user_id,<NULL>,reject row
+interactions,60197,missing_user_id,error,user_id,<NULL>,reject row
+interactions,60389,missing_user_id,error,user_id,<NULL>,reject row
+interactions,60592,missing_user_id,error,user_id,<NULL>,reject row
+interactions,60946,missing_user_id,error,user_id,<NULL>,reject row
+interactions,61704,missing_user_id,error,user_id,<NULL>,reject row
+interactions,61833,missing_user_id,error,user_id,<NULL>,reject row
+interactions,62633,missing_user_id,error,user_id,<NULL>,reject row
+interactions,62923,missing_user_id,error,user_id,<NULL>,reject row
+interactions,62999,missing_user_id,error,user_id,<NULL>,reject row
+interactions,63281,missing_user_id,error,user_id,<NULL>,reject row
+interactions,63989,missing_user_id,error,user_id,<NULL>,reject row
+interactions,64469,missing_user_id,error,user_id,<NULL>,reject row
+interactions,65434,missing_user_id,error,user_id,<NULL>,reject row
+interactions,65547,missing_user_id,error,user_id,<NULL>,reject row
+interactions,66453,missing_user_id,error,user_id,<NULL>,reject row
+interactions,66676,missing_user_id,error,user_id,<NULL>,reject row
+interactions,66809,missing_user_id,error,user_id,<NULL>,reject row
+interactions,67047,missing_user_id,error,user_id,<NULL>,reject row
+interactions,67089,missing_user_id,error,user_id,<NULL>,reject row
+interactions,67212,missing_user_id,error,user_id,<NULL>,reject row
+interactions,67363,missing_user_id,error,user_id,<NULL>,reject row
+interactions,67391,missing_user_id,error,user_id,<NULL>,reject row
+interactions,68809,missing_user_id,error,user_id,<NULL>,reject row
+interactions,69462,missing_user_id,error,user_id,<NULL>,reject row
+interactions,72345,missing_user_id,error,user_id,<NULL>,reject row
+interactions,73950,missing_user_id,error,user_id,<NULL>,reject row
+interactions,74578,missing_user_id,error,user_id,<NULL>,reject row
+interactions,75285,missing_user_id,error,user_id,<NULL>,reject row
+interactions,76169,missing_user_id,error,user_id,<NULL>,reject row
+interactions,76445,missing_user_id,error,user_id,<NULL>,reject row
+interactions,76700,missing_user_id,error,user_id,<NULL>,reject row
+interactions,77068,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80020,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80064,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80138,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80161,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80317,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80429,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80450,missing_user_id,error,user_id,<NULL>,reject row
+interactions,80645,missing_user_id,error,user_id,<NULL>,reject row
+interactions,81003,missing_user_id,error,user_id,<NULL>,reject row
+interactions,81335,missing_user_id,error,user_id,<NULL>,reject row
+interactions,81448,missing_user_id,error,user_id,<NULL>,reject row
+interactions,81534,missing_user_id,error,user_id,<NULL>,reject row
+interactions,82369,missing_user_id,error,user_id,<NULL>,reject row
+interactions,83668,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84515,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84549,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84584,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84622,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84692,missing_user_id,error,user_id,<NULL>,reject row
+interactions,84747,missing_user_id,error,user_id,<NULL>,reject row
+interactions,85311,missing_user_id,error,user_id,<NULL>,reject row
+interactions,85406,missing_user_id,error,user_id,<NULL>,reject row
+interactions,85781,missing_user_id,error,user_id,<NULL>,reject row
+interactions,86053,missing_user_id,error,user_id,<NULL>,reject row
+interactions,86605,missing_user_id,error,user_id,<NULL>,reject row
+interactions,86733,missing_user_id,error,user_id,<NULL>,reject row
+interactions,86749,missing_user_id,error,user_id,<NULL>,reject row
+interactions,87196,missing_user_id,error,user_id,<NULL>,reject row
+interactions,87594,missing_user_id,error,user_id,<NULL>,reject row
+interactions,87678,missing_user_id,error,user_id,<NULL>,reject row
+interactions,88417,missing_user_id,error,user_id,<NULL>,reject row
+interactions,89038,missing_user_id,error,user_id,<NULL>,reject row
+interactions,89722,missing_user_id,error,user_id,<NULL>,reject row
+interactions,89837,missing_user_id,error,user_id,<NULL>,reject row
+interactions,90817,missing_user_id,error,user_id,<NULL>,reject row
+interactions,91385,missing_user_id,error,user_id,<NULL>,reject row
+interactions,91868,missing_user_id,error,user_id,<NULL>,reject row
+interactions,93209,missing_user_id,error,user_id,<NULL>,reject row
+interactions,93600,missing_user_id,error,user_id,<NULL>,reject row
+interactions,93644,missing_user_id,error,user_id,<NULL>,reject row
+interactions,93759,missing_user_id,error,user_id,<NULL>,reject row
+interactions,93851,missing_user_id,error,user_id,<NULL>,reject row
+interactions,95087,missing_user_id,error,user_id,<NULL>,reject row
+interactions,98017,missing_user_id,error,user_id,<NULL>,reject row
+interactions,98192,missing_user_id,error,user_id,<NULL>,reject row
+interactions,436,missing_rating,error,rating,<NULL>,reject row
+interactions,494,missing_rating,error,rating,<NULL>,reject row
+interactions,800,missing_rating,error,rating,<NULL>,reject row
+interactions,4620,missing_rating,error,rating,<NULL>,reject row
+interactions,5132,missing_rating,error,rating,<NULL>,reject row
+interactions,5232,missing_rating,error,rating,<NULL>,reject row
+interactions,5862,missing_rating,error,rating,<NULL>,reject row
+interactions,6461,missing_rating,error,rating,<NULL>,reject row
+interactions,7525,missing_rating,error,rating,<NULL>,reject row
+interactions,8153,missing_rating,error,rating,<NULL>,reject row
+interactions,8237,missing_rating,error,rating,<NULL>,reject row
+interactions,8403,missing_rating,error,rating,<NULL>,reject row
+interactions,8562,missing_rating,error,rating,<NULL>,reject row
+interactions,9616,missing_rating,error,rating,<NULL>,reject row
+interactions,9852,missing_rating,error,rating,<NULL>,reject row
+interactions,10051,missing_rating,error,rating,<NULL>,reject row
+interactions,10093,missing_rating,error,rating,<NULL>,reject row
+interactions,10203,missing_rating,error,rating,<NULL>,reject row
+interactions,10434,missing_rating,error,rating,<NULL>,reject row
+interactions,10664,missing_rating,error,rating,<NULL>,reject row
+interactions,10731,missing_rating,error,rating,<NULL>,reject row
+interactions,11089,missing_rating,error,rating,<NULL>,reject row
+interactions,12615,missing_rating,error,rating,<NULL>,reject row
+interactions,12650,missing_rating,error,rating,<NULL>,reject row
+interactions,12780,missing_rating,error,rating,<NULL>,reject row
+interactions,13171,missing_rating,error,rating,<NULL>,reject row
+interactions,13306,missing_rating,error,rating,<NULL>,reject row
+interactions,13320,missing_rating,error,rating,<NULL>,reject row
+interactions,13908,missing_rating,error,rating,<NULL>,reject row
+interactions,14061,missing_rating,error,rating,<NULL>,reject row
+interactions,14155,missing_rating,error,rating,<NULL>,reject row
+interactions,14961,missing_rating,error,rating,<NULL>,reject row
+interactions,14994,missing_rating,error,rating,<NULL>,reject row
+interactions,16415,missing_rating,error,rating,<NULL>,reject row
+interactions,16876,missing_rating,error,rating,<NULL>,reject row
+interactions,16995,missing_rating,error,rating,<NULL>,reject row
+interactions,17250,missing_rating,error,rating,<NULL>,reject row
+interactions,17329,missing_rating,error,rating,<NULL>,reject row
+interactions,19803,missing_rating,error,rating,<NULL>,reject row
+interactions,19875,missing_rating,error,rating,<NULL>,reject row
+interactions,20074,missing_rating,error,rating,<NULL>,reject row
+interactions,20452,missing_rating,error,rating,<NULL>,reject row
+interactions,20631,missing_rating,error,rating,<NULL>,reject row
+interactions,21072,missing_rating,error,rating,<NULL>,reject row
+interactions,21343,missing_rating,error,rating,<NULL>,reject row
+interactions,21976,missing_rating,error,rating,<NULL>,reject row
+interactions,22727,missing_rating,error,rating,<NULL>,reject row
+interactions,22851,missing_rating,error,rating,<NULL>,reject row
+interactions,23685,missing_rating,error,rating,<NULL>,reject row
+interactions,24201,missing_rating,error,rating,<NULL>,reject row
+interactions,25426,missing_rating,error,rating,<NULL>,reject row
+interactions,26351,missing_rating,error,rating,<NULL>,reject row
+interactions,26661,missing_rating,error,rating,<NULL>,reject row
+interactions,26945,missing_rating,error,rating,<NULL>,reject row
+interactions,27025,missing_rating,error,rating,<NULL>,reject row
+interactions,28166,missing_rating,error,rating,<NULL>,reject row
+interactions,30338,missing_rating,error,rating,<NULL>,reject row
+interactions,30782,missing_rating,error,rating,<NULL>,reject row
+interactions,31491,missing_rating,error,rating,<NULL>,reject row
+interactions,33565,missing_rating,error,rating,<NULL>,reject row
+interactions,34254,missing_rating,error,rating,<NULL>,reject row
+interactions,34483,missing_rating,error,rating,<NULL>,reject row
+interactions,34621,missing_rating,error,rating,<NULL>,reject row
+interactions,35014,missing_rating,error,rating,<NULL>,reject row
+interactions,35083,missing_rating,error,rating,<NULL>,reject row
+interactions,35588,missing_rating,error,rating,<NULL>,reject row
+interactions,35709,missing_rating,error,rating,<NULL>,reject row
+interactions,35923,missing_rating,error,rating,<NULL>,reject row
+interactions,36047,missing_rating,error,rating,<NULL>,reject row
+interactions,36690,missing_rating,error,rating,<NULL>,reject row
+interactions,36727,missing_rating,error,rating,<NULL>,reject row
+interactions,37039,missing_rating,error,rating,<NULL>,reject row
+interactions,37546,missing_rating,error,rating,<NULL>,reject row
+interactions,38243,missing_rating,error,rating,<NULL>,reject row
+interactions,38987,missing_rating,error,rating,<NULL>,reject row
+interactions,39232,missing_rating,error,rating,<NULL>,reject row
+interactions,40835,missing_rating,error,rating,<NULL>,reject row
+interactions,40894,missing_rating,error,rating,<NULL>,reject row
+interactions,41170,missing_rating,error,rating,<NULL>,reject row
+interactions,41447,missing_rating,error,rating,<NULL>,reject row
+interactions,41652,missing_rating,error,rating,<NULL>,reject row
+interactions,41684,missing_rating,error,rating,<NULL>,reject row
+interactions,41872,missing_rating,error,rating,<NULL>,reject row
+interactions,42916,missing_rating,error,rating,<NULL>,reject row
+interactions,43406,missing_rating,error,rating,<NULL>,reject row
+interactions,43862,missing_rating,error,rating,<NULL>,reject row
+interactions,44332,missing_rating,error,rating,<NULL>,reject row
+interactions,46455,missing_rating,error,rating,<NULL>,reject row
+interactions,46585,missing_rating,error,rating,<NULL>,reject row
+interactions,47270,missing_rating,error,rating,<NULL>,reject row
+interactions,47699,missing_rating,error,rating,<NULL>,reject row
+interactions,48502,missing_rating,error,rating,<NULL>,reject row
+interactions,49223,missing_rating,error,rating,<NULL>,reject row
+interactions,49546,missing_rating,error,rating,<NULL>,reject row
+interactions,50746,missing_rating,error,rating,<NULL>,reject row
+interactions,51594,missing_rating,error,rating,<NULL>,reject row
+interactions,52024,missing_rating,error,rating,<NULL>,reject row
+interactions,52152,missing_rating,error,rating,<NULL>,reject row
+interactions,52169,missing_rating,error,rating,<NULL>,reject row
+interactions,52858,missing_rating,error,rating,<NULL>,reject row
+interactions,53513,missing_rating,error,rating,<NULL>,reject row
+interactions,53632,missing_rating,error,rating,<NULL>,reject row
+interactions,53873,missing_rating,error,rating,<NULL>,reject row
+interactions,54106,missing_rating,error,rating,<NULL>,reject row
+interactions,55432,missing_rating,error,rating,<NULL>,reject row
+interactions,55612,missing_rating,error,rating,<NULL>,reject row
+interactions,56165,missing_rating,error,rating,<NULL>,reject row
+interactions,56273,missing_rating,error,rating,<NULL>,reject row
+interactions,57930,missing_rating,error,rating,<NULL>,reject row
+interactions,57940,missing_rating,error,rating,<NULL>,reject row
+interactions,59179,missing_rating,error,rating,<NULL>,reject row
+interactions,59833,missing_rating,error,rating,<NULL>,reject row
+interactions,61753,missing_rating,error,rating,<NULL>,reject row
+interactions,61852,missing_rating,error,rating,<NULL>,reject row
+interactions,62422,missing_rating,error,rating,<NULL>,reject row
+interactions,62979,missing_rating,error,rating,<NULL>,reject row
+interactions,63156,missing_rating,error,rating,<NULL>,reject row
+interactions,63262,missing_rating,error,rating,<NULL>,reject row
+interactions,63437,missing_rating,error,rating,<NULL>,reject row
+interactions,63857,missing_rating,error,rating,<NULL>,reject row
+interactions,63928,missing_rating,error,rating,<NULL>,reject row
+interactions,65670,missing_rating,error,rating,<NULL>,reject row
+interactions,65737,missing_rating,error,rating,<NULL>,reject row
+interactions,66376,missing_rating,error,rating,<NULL>,reject row
+interactions,66547,missing_rating,error,rating,<NULL>,reject row
+interactions,67556,missing_rating,error,rating,<NULL>,reject row
+interactions,68050,missing_rating,error,rating,<NULL>,reject row
+interactions,68369,missing_rating,error,rating,<NULL>,reject row
+interactions,68944,missing_rating,error,rating,<NULL>,reject row
+interactions,69231,missing_rating,error,rating,<NULL>,reject row
+interactions,69468,missing_rating,error,rating,<NULL>,reject row
+interactions,69733,missing_rating,error,rating,<NULL>,reject row
+interactions,70065,missing_rating,error,rating,<NULL>,reject row
+interactions,70092,missing_rating,error,rating,<NULL>,reject row
+interactions,70101,missing_rating,error,rating,<NULL>,reject row
+interactions,70207,missing_rating,error,rating,<NULL>,reject row
+interactions,70263,missing_rating,error,rating,<NULL>,reject row
+interactions,70556,missing_rating,error,rating,<NULL>,reject row
+interactions,70564,missing_rating,error,rating,<NULL>,reject row
+interactions,71781,missing_rating,error,rating,<NULL>,reject row
+interactions,71858,missing_rating,error,rating,<NULL>,reject row
+interactions,72279,missing_rating,error,rating,<NULL>,reject row
+interactions,72909,missing_rating,error,rating,<NULL>,reject row
+interactions,73910,missing_rating,error,rating,<NULL>,reject row
+interactions,74817,missing_rating,error,rating,<NULL>,reject row
+interactions,75001,missing_rating,error,rating,<NULL>,reject row
+interactions,75160,missing_rating,error,rating,<NULL>,reject row
+interactions,75545,missing_rating,error,rating,<NULL>,reject row
+interactions,76172,missing_rating,error,rating,<NULL>,reject row
+interactions,76789,missing_rating,error,rating,<NULL>,reject row
+interactions,77608,missing_rating,error,rating,<NULL>,reject row
+interactions,78193,missing_rating,error,rating,<NULL>,reject row
+interactions,79796,missing_rating,error,rating,<NULL>,reject row
+interactions,80150,missing_rating,error,rating,<NULL>,reject row
+interactions,81077,missing_rating,error,rating,<NULL>,reject row
+interactions,81304,missing_rating,error,rating,<NULL>,reject row
+interactions,81711,missing_rating,error,rating,<NULL>,reject row
+interactions,81990,missing_rating,error,rating,<NULL>,reject row
+interactions,82157,missing_rating,error,rating,<NULL>,reject row
+interactions,82346,missing_rating,error,rating,<NULL>,reject row
+interactions,83102,missing_rating,error,rating,<NULL>,reject row
+interactions,83791,missing_rating,error,rating,<NULL>,reject row
+interactions,84160,missing_rating,error,rating,<NULL>,reject row
+interactions,84569,missing_rating,error,rating,<NULL>,reject row
+interactions,85045,missing_rating,error,rating,<NULL>,reject row
+interactions,85269,missing_rating,error,rating,<NULL>,reject row
+interactions,85481,missing_rating,error,rating,<NULL>,reject row
+interactions,86133,missing_rating,error,rating,<NULL>,reject row
+interactions,86383,missing_rating,error,rating,<NULL>,reject row
+interactions,87121,missing_rating,error,rating,<NULL>,reject row
+interactions,87442,missing_rating,error,rating,<NULL>,reject row
+interactions,87447,missing_rating,error,rating,<NULL>,reject row
+interactions,87621,missing_rating,error,rating,<NULL>,reject row
+interactions,87939,missing_rating,error,rating,<NULL>,reject row
+interactions,88331,missing_rating,error,rating,<NULL>,reject row
+interactions,89432,missing_rating,error,rating,<NULL>,reject row
+interactions,90416,missing_rating,error,rating,<NULL>,reject row
+interactions,90796,missing_rating,error,rating,<NULL>,reject row
+interactions,91491,missing_rating,error,rating,<NULL>,reject row
+interactions,91828,missing_rating,error,rating,<NULL>,reject row
+interactions,92354,missing_rating,error,rating,<NULL>,reject row
+interactions,92578,missing_rating,error,rating,<NULL>,reject row
+interactions,92783,missing_rating,error,rating,<NULL>,reject row
+interactions,92983,missing_rating,error,rating,<NULL>,reject row
+interactions,93036,missing_rating,error,rating,<NULL>,reject row
+interactions,93073,missing_rating,error,rating,<NULL>,reject row
+interactions,93243,missing_rating,error,rating,<NULL>,reject row
+interactions,93769,missing_rating,error,rating,<NULL>,reject row
+interactions,95581,missing_rating,error,rating,<NULL>,reject row
+interactions,95743,missing_rating,error,rating,<NULL>,reject row
+interactions,95889,missing_rating,error,rating,<NULL>,reject row
+interactions,95897,missing_rating,error,rating,<NULL>,reject row
+interactions,96417,missing_rating,error,rating,<NULL>,reject row
+interactions,96994,missing_rating,error,rating,<NULL>,reject row
+interactions,96996,missing_rating,error,rating,<NULL>,reject row
+interactions,97519,missing_rating,error,rating,<NULL>,reject row
+interactions,97969,missing_rating,error,rating,<NULL>,reject row
+interactions,98455,missing_rating,error,rating,<NULL>,reject row
+interactions,99146,missing_rating,error,rating,<NULL>,reject row
+interactions,99559,missing_rating,error,rating,<NULL>,reject row
+interactions,552,invalid_type_rating,error,rating,good,reject row
+interactions,1588,invalid_type_rating,error,rating,good,reject row
+interactions,2446,invalid_type_rating,error,rating,five,reject row
+interactions,2689,invalid_type_rating,error,rating,good,reject row
+interactions,2730,invalid_type_rating,error,rating,five,reject row
+interactions,3851,invalid_type_rating,error,rating,five,reject row
+interactions,3883,invalid_type_rating,error,rating,five,reject row
+interactions,4147,invalid_type_rating,error,rating,excellent,reject row
+interactions,5355,invalid_type_rating,error,rating,five,reject row
+interactions,5803,invalid_type_rating,error,rating,five,reject row
+interactions,6690,invalid_type_rating,error,rating,excellent,reject row
+interactions,8222,invalid_type_rating,error,rating,excellent,reject row
+interactions,8465,invalid_type_rating,error,rating,excellent,reject row
+interactions,10048,invalid_type_rating,error,rating,excellent,reject row
+interactions,10801,invalid_type_rating,error,rating,five,reject row
+interactions,10824,invalid_type_rating,error,rating,excellent,reject row
+interactions,10974,invalid_type_rating,error,rating,good,reject row
+interactions,10982,invalid_type_rating,error,rating,good,reject row
+interactions,11179,invalid_type_rating,error,rating,five,reject row
+interactions,11833,invalid_type_rating,error,rating,five,reject row
+interactions,11890,invalid_type_rating,error,rating,five,reject row
+interactions,12061,invalid_type_rating,error,rating,excellent,reject row
+interactions,12635,invalid_type_rating,error,rating,five,reject row
+interactions,13686,invalid_type_rating,error,rating,excellent,reject row
+interactions,15789,invalid_type_rating,error,rating,excellent,reject row
+interactions,16088,invalid_type_rating,error,rating,good,reject row
+interactions,16679,invalid_type_rating,error,rating,excellent,reject row
+interactions,16733,invalid_type_rating,error,rating,excellent,reject row
+interactions,17787,invalid_type_rating,error,rating,good,reject row
+interactions,17998,invalid_type_rating,error,rating,five,reject row
+interactions,18206,invalid_type_rating,error,rating,good,reject row
+interactions,18294,invalid_type_rating,error,rating,good,reject row
+interactions,18564,invalid_type_rating,error,rating,excellent,reject row
+interactions,18592,invalid_type_rating,error,rating,five,reject row
+interactions,18947,invalid_type_rating,error,rating,excellent,reject row
+interactions,19089,invalid_type_rating,error,rating,excellent,reject row
+interactions,19216,invalid_type_rating,error,rating,good,reject row
+interactions,19587,invalid_type_rating,error,rating,five,reject row
+interactions,20507,invalid_type_rating,error,rating,excellent,reject row
+interactions,20781,invalid_type_rating,error,rating,excellent,reject row
+interactions,21970,invalid_type_rating,error,rating,five,reject row
+interactions,23837,invalid_type_rating,error,rating,five,reject row
+interactions,24084,invalid_type_rating,error,rating,good,reject row
+interactions,24396,invalid_type_rating,error,rating,good,reject row
+interactions,25185,invalid_type_rating,error,rating,good,reject row
+interactions,26340,invalid_type_rating,error,rating,good,reject row
+interactions,28055,invalid_type_rating,error,rating,good,reject row
+interactions,28180,invalid_type_rating,error,rating,good,reject row
+interactions,28765,invalid_type_rating,error,rating,five,reject row
+interactions,29738,invalid_type_rating,error,rating,excellent,reject row
+interactions,30688,invalid_type_rating,error,rating,five,reject row
+interactions,31136,invalid_type_rating,error,rating,good,reject row
+interactions,31172,invalid_type_rating,error,rating,five,reject row
+interactions,31459,invalid_type_rating,error,rating,five,reject row
+interactions,31708,invalid_type_rating,error,rating,excellent,reject row
+interactions,31738,invalid_type_rating,error,rating,five,reject row
+interactions,31995,invalid_type_rating,error,rating,excellent,reject row
+interactions,32414,invalid_type_rating,error,rating,excellent,reject row
+interactions,32956,invalid_type_rating,error,rating,excellent,reject row
+interactions,32995,invalid_type_rating,error,rating,five,reject row
+interactions,32996,invalid_type_rating,error,rating,five,reject row
+interactions,33353,invalid_type_rating,error,rating,five,reject row
+interactions,34111,invalid_type_rating,error,rating,good,reject row
+interactions,34215,invalid_type_rating,error,rating,good,reject row
+interactions,34580,invalid_type_rating,error,rating,excellent,reject row
+interactions,34719,invalid_type_rating,error,rating,excellent,reject row
+interactions,34913,invalid_type_rating,error,rating,five,reject row
+interactions,35285,invalid_type_rating,error,rating,good,reject row
+interactions,35783,invalid_type_rating,error,rating,good,reject row
+interactions,36537,invalid_type_rating,error,rating,excellent,reject row
+interactions,37419,invalid_type_rating,error,rating,five,reject row
+interactions,37571,invalid_type_rating,error,rating,excellent,reject row
+interactions,38809,invalid_type_rating,error,rating,excellent,reject row
+interactions,39376,invalid_type_rating,error,rating,excellent,reject row
+interactions,39393,invalid_type_rating,error,rating,excellent,reject row
+interactions,40130,invalid_type_rating,error,rating,excellent,reject row
+interactions,41605,invalid_type_rating,error,rating,five,reject row
+interactions,41758,invalid_type_rating,error,rating,excellent,reject row
+interactions,41937,invalid_type_rating,error,rating,excellent,reject row
+interactions,42554,invalid_type_rating,error,rating,excellent,reject row
+interactions,42651,invalid_type_rating,error,rating,good,reject row
+interactions,43936,invalid_type_rating,error,rating,good,reject row
+interactions,45189,invalid_type_rating,error,rating,five,reject row
+interactions,45521,invalid_type_rating,error,rating,excellent,reject row
+interactions,45533,invalid_type_rating,error,rating,excellent,reject row
+interactions,45868,invalid_type_rating,error,rating,five,reject row
+interactions,45953,invalid_type_rating,error,rating,good,reject row
+interactions,47976,invalid_type_rating,error,rating,excellent,reject row
+interactions,48397,invalid_type_rating,error,rating,excellent,reject row
+interactions,49014,invalid_type_rating,error,rating,good,reject row
+interactions,49045,invalid_type_rating,error,rating,good,reject row
+interactions,49456,invalid_type_rating,error,rating,good,reject row
+interactions,49457,invalid_type_rating,error,rating,good,reject row
+interactions,49716,invalid_type_rating,error,rating,five,reject row
+interactions,49880,invalid_type_rating,error,rating,excellent,reject row
+interactions,50105,invalid_type_rating,error,rating,good,reject row
+interactions,50399,invalid_type_rating,error,rating,excellent,reject row
+interactions,50437,invalid_type_rating,error,rating,good,reject row
+interactions,50599,invalid_type_rating,error,rating,five,reject row
+interactions,50874,invalid_type_rating,error,rating,five,reject row
+interactions,50912,invalid_type_rating,error,rating,excellent,reject row
+interactions,52128,invalid_type_rating,error,rating,five,reject row
+interactions,52360,invalid_type_rating,error,rating,good,reject row
+interactions,52840,invalid_type_rating,error,rating,excellent,reject row
+interactions,53351,invalid_type_rating,error,rating,five,reject row
+interactions,53414,invalid_type_rating,error,rating,five,reject row
+interactions,53937,invalid_type_rating,error,rating,five,reject row
+interactions,53951,invalid_type_rating,error,rating,excellent,reject row
+interactions,54630,invalid_type_rating,error,rating,five,reject row
+interactions,55021,invalid_type_rating,error,rating,excellent,reject row
+interactions,55452,invalid_type_rating,error,rating,good,reject row
+interactions,56005,invalid_type_rating,error,rating,five,reject row
+interactions,56359,invalid_type_rating,error,rating,excellent,reject row
+interactions,57106,invalid_type_rating,error,rating,good,reject row
+interactions,57334,invalid_type_rating,error,rating,good,reject row
+interactions,57522,invalid_type_rating,error,rating,good,reject row
+interactions,58740,invalid_type_rating,error,rating,excellent,reject row
+interactions,59167,invalid_type_rating,error,rating,excellent,reject row
+interactions,59302,invalid_type_rating,error,rating,excellent,reject row
+interactions,59355,invalid_type_rating,error,rating,good,reject row
+interactions,61923,invalid_type_rating,error,rating,good,reject row
+interactions,62763,invalid_type_rating,error,rating,excellent,reject row
+interactions,62912,invalid_type_rating,error,rating,excellent,reject row
+interactions,62955,invalid_type_rating,error,rating,excellent,reject row
+interactions,64008,invalid_type_rating,error,rating,excellent,reject row
+interactions,64808,invalid_type_rating,error,rating,good,reject row
+interactions,65100,invalid_type_rating,error,rating,good,reject row
+interactions,65107,invalid_type_rating,error,rating,excellent,reject row
+interactions,65211,invalid_type_rating,error,rating,five,reject row
+interactions,65345,invalid_type_rating,error,rating,five,reject row
+interactions,65663,invalid_type_rating,error,rating,excellent,reject row
+interactions,65773,invalid_type_rating,error,rating,five,reject row
+interactions,65897,invalid_type_rating,error,rating,excellent,reject row
+interactions,66070,invalid_type_rating,error,rating,excellent,reject row
+interactions,67004,invalid_type_rating,error,rating,five,reject row
+interactions,67695,invalid_type_rating,error,rating,five,reject row
+interactions,67880,invalid_type_rating,error,rating,good,reject row
+interactions,68563,invalid_type_rating,error,rating,excellent,reject row
+interactions,68966,invalid_type_rating,error,rating,excellent,reject row
+interactions,68971,invalid_type_rating,error,rating,five,reject row
+interactions,69106,invalid_type_rating,error,rating,good,reject row
+interactions,69443,invalid_type_rating,error,rating,excellent,reject row
+interactions,69926,invalid_type_rating,error,rating,excellent,reject row
+interactions,70219,invalid_type_rating,error,rating,excellent,reject row
+interactions,70452,invalid_type_rating,error,rating,excellent,reject row
+interactions,71165,invalid_type_rating,error,rating,excellent,reject row
+interactions,72524,invalid_type_rating,error,rating,five,reject row
+interactions,73685,invalid_type_rating,error,rating,excellent,reject row
+interactions,74228,invalid_type_rating,error,rating,excellent,reject row
+interactions,74706,invalid_type_rating,error,rating,five,reject row
+interactions,75336,invalid_type_rating,error,rating,good,reject row
+interactions,75631,invalid_type_rating,error,rating,excellent,reject row
+interactions,75966,invalid_type_rating,error,rating,five,reject row
+interactions,76011,invalid_type_rating,error,rating,excellent,reject row
+interactions,76070,invalid_type_rating,error,rating,five,reject row
+interactions,76208,invalid_type_rating,error,rating,good,reject row
+interactions,76536,invalid_type_rating,error,rating,excellent,reject row
+interactions,76706,invalid_type_rating,error,rating,good,reject row
+interactions,77527,invalid_type_rating,error,rating,good,reject row
+interactions,78344,invalid_type_rating,error,rating,good,reject row
+interactions,80847,invalid_type_rating,error,rating,good,reject row
+interactions,81428,invalid_type_rating,error,rating,good,reject row
+interactions,81846,invalid_type_rating,error,rating,five,reject row
+interactions,83342,invalid_type_rating,error,rating,good,reject row
+interactions,83635,invalid_type_rating,error,rating,five,reject row
+interactions,84740,invalid_type_rating,error,rating,excellent,reject row
+interactions,85117,invalid_type_rating,error,rating,five,reject row
+interactions,86026,invalid_type_rating,error,rating,five,reject row
+interactions,86046,invalid_type_rating,error,rating,five,reject row
+interactions,86254,invalid_type_rating,error,rating,excellent,reject row
+interactions,88114,invalid_type_rating,error,rating,good,reject row
+interactions,88599,invalid_type_rating,error,rating,good,reject row
+interactions,89095,invalid_type_rating,error,rating,five,reject row
+interactions,89558,invalid_type_rating,error,rating,good,reject row
+interactions,89609,invalid_type_rating,error,rating,good,reject row
+interactions,89988,invalid_type_rating,error,rating,good,reject row
+interactions,90077,invalid_type_rating,error,rating,five,reject row
+interactions,90419,invalid_type_rating,error,rating,good,reject row
+interactions,90464,invalid_type_rating,error,rating,good,reject row
+interactions,90690,invalid_type_rating,error,rating,good,reject row
+interactions,90714,invalid_type_rating,error,rating,good,reject row
+interactions,90813,invalid_type_rating,error,rating,good,reject row
+interactions,90933,invalid_type_rating,error,rating,excellent,reject row
+interactions,91351,invalid_type_rating,error,rating,five,reject row
+interactions,91442,invalid_type_rating,error,rating,five,reject row
+interactions,92012,invalid_type_rating,error,rating,excellent,reject row
+interactions,92188,invalid_type_rating,error,rating,good,reject row
+interactions,92221,invalid_type_rating,error,rating,good,reject row
+interactions,95786,invalid_type_rating,error,rating,excellent,reject row
+interactions,96200,invalid_type_rating,error,rating,five,reject row
+interactions,96665,invalid_type_rating,error,rating,excellent,reject row
+interactions,96950,invalid_type_rating,error,rating,five,reject row
+interactions,97874,invalid_type_rating,error,rating,five,reject row
+interactions,98005,invalid_type_rating,error,rating,good,reject row
+interactions,98358,invalid_type_rating,error,rating,excellent,reject row
+interactions,98481,invalid_type_rating,error,rating,five,reject row
+interactions,98492,invalid_type_rating,error,rating,excellent,reject row
+interactions,98882,invalid_type_rating,error,rating,five,reject row
+interactions,98953,invalid_type_rating,error,rating,excellent,reject row
+interactions,99516,invalid_type_rating,error,rating,five,reject row
+interactions,533,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,1304,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,1977,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,2488,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,2566,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,3559,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,4148,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,5439,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,5619,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,5811,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,6623,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,8088,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,8477,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,8483,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,9360,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,9967,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,10826,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,11100,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,11357,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,11365,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,12721,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,12746,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,13031,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,13282,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,13493,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,13499,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,13846,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,14659,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,15280,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,15294,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,15528,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,16773,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,17503,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,17571,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,17685,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,17964,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,19944,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,20039,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,20881,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,21209,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,22238,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,23554,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,23655,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,24325,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,24972,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,26113,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,26738,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,27094,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,27568,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,28248,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,28683,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,28947,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,29451,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,32820,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,32869,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,33282,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,33616,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,33693,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,33755,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,33904,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,34805,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,34870,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,37726,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,37814,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,37984,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,39228,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,40129,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,41407,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,41669,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,41711,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,41812,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,42419,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,42751,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,43194,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,43598,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,43798,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,43902,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,43958,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,44077,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,44231,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,45204,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,45244,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,45323,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,45455,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,45907,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,48088,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,48257,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,48803,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,49073,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,49377,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,49610,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,50800,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,51193,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,51447,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,52029,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,52040,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,52354,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,53019,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,54483,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,54946,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,55179,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,56272,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,56988,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,57116,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,57256,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,57384,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,57568,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,57686,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,57927,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,58316,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,59237,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,59390,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,59499,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,60096,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,60950,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,61117,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,61475,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,61664,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,61705,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,61881,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,62784,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,63237,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,64010,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,64796,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,65079,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,65093,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,65106,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,66079,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,66198,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,66499,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,67380,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,67503,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,68148,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,68276,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,69436,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,69453,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,70539,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,70998,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,71395,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,71403,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,71614,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,74076,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,74359,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,74480,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,75219,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,76508,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,76787,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,78328,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,78785,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,79415,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,79918,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,80602,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,80743,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,80850,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,81234,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,81236,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,81800,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,82859,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,83048,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,83964,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,84456,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,84761,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,84974,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,85084,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,85349,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,85699,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,87220,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,88251,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,89230,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,90744,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,90776,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,90984,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,91057,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,91375,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,91435,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,92176,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,92530,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,92885,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,92951,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,93224,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,93406,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,93409,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,93719,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,94421,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,95965,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,96411,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,97053,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,97245,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,97678,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,97795,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,97987,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,98273,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,98318,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,98810,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,99011,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,99032,invalid_type_timestamp,error,timestamp,yesterday,reject row
+interactions,99258,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,99645,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,99703,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,99801,invalid_type_timestamp,error,timestamp,not_a_timestamp,reject row
+interactions,32,rating_out_of_range,error,rating,6,reject row
+interactions,735,rating_out_of_range,error,rating,7,reject row
+interactions,1516,rating_out_of_range,error,rating,0,reject row
+interactions,1850,rating_out_of_range,error,rating,0,reject row
+interactions,2471,rating_out_of_range,error,rating,6,reject row
+interactions,2482,rating_out_of_range,error,rating,7,reject row
+interactions,2503,rating_out_of_range,error,rating,-1,reject row
+interactions,2533,rating_out_of_range,error,rating,10,reject row
+interactions,2599,rating_out_of_range,error,rating,-1,reject row
+interactions,5263,rating_out_of_range,error,rating,-1,reject row
+interactions,5707,rating_out_of_range,error,rating,-1,reject row
+interactions,6112,rating_out_of_range,error,rating,6,reject row
+interactions,6925,rating_out_of_range,error,rating,7,reject row
+interactions,7017,rating_out_of_range,error,rating,-1,reject row
+interactions,7068,rating_out_of_range,error,rating,-1,reject row
+interactions,7767,rating_out_of_range,error,rating,0,reject row
+interactions,9246,rating_out_of_range,error,rating,-1,reject row
+interactions,9707,rating_out_of_range,error,rating,6,reject row
+interactions,9837,rating_out_of_range,error,rating,10,reject row
+interactions,10229,rating_out_of_range,error,rating,-1,reject row
+interactions,10746,rating_out_of_range,error,rating,-1,reject row
+interactions,11670,rating_out_of_range,error,rating,6,reject row
+interactions,11815,rating_out_of_range,error,rating,0,reject row
+interactions,12041,rating_out_of_range,error,rating,10,reject row
+interactions,12204,rating_out_of_range,error,rating,6,reject row
+interactions,12835,rating_out_of_range,error,rating,0,reject row
+interactions,12852,rating_out_of_range,error,rating,-1,reject row
+interactions,13181,rating_out_of_range,error,rating,-1,reject row
+interactions,13441,rating_out_of_range,error,rating,-1,reject row
+interactions,13955,rating_out_of_range,error,rating,6,reject row
+interactions,14039,rating_out_of_range,error,rating,10,reject row
+interactions,14146,rating_out_of_range,error,rating,0,reject row
+interactions,14762,rating_out_of_range,error,rating,6,reject row
+interactions,14804,rating_out_of_range,error,rating,-1,reject row
+interactions,14951,rating_out_of_range,error,rating,0,reject row
+interactions,15803,rating_out_of_range,error,rating,10,reject row
+interactions,16563,rating_out_of_range,error,rating,-1,reject row
+interactions,16650,rating_out_of_range,error,rating,7,reject row
+interactions,16874,rating_out_of_range,error,rating,7,reject row
+interactions,17140,rating_out_of_range,error,rating,7,reject row
+interactions,18139,rating_out_of_range,error,rating,0,reject row
+interactions,20167,rating_out_of_range,error,rating,10,reject row
+interactions,20314,rating_out_of_range,error,rating,10,reject row
+interactions,22126,rating_out_of_range,error,rating,7,reject row
+interactions,22539,rating_out_of_range,error,rating,6,reject row
+interactions,22576,rating_out_of_range,error,rating,7,reject row
+interactions,22648,rating_out_of_range,error,rating,-1,reject row
+interactions,22959,rating_out_of_range,error,rating,10,reject row
+interactions,24827,rating_out_of_range,error,rating,7,reject row
+interactions,25257,rating_out_of_range,error,rating,10,reject row
+interactions,25741,rating_out_of_range,error,rating,-1,reject row
+interactions,26100,rating_out_of_range,error,rating,6,reject row
+interactions,26737,rating_out_of_range,error,rating,-1,reject row
+interactions,27019,rating_out_of_range,error,rating,0,reject row
+interactions,27053,rating_out_of_range,error,rating,0,reject row
+interactions,27229,rating_out_of_range,error,rating,7,reject row
+interactions,27366,rating_out_of_range,error,rating,7,reject row
+interactions,28085,rating_out_of_range,error,rating,10,reject row
+interactions,29234,rating_out_of_range,error,rating,7,reject row
+interactions,30787,rating_out_of_range,error,rating,-1,reject row
+interactions,30889,rating_out_of_range,error,rating,10,reject row
+interactions,31395,rating_out_of_range,error,rating,6,reject row
+interactions,32418,rating_out_of_range,error,rating,6,reject row
+interactions,32662,rating_out_of_range,error,rating,10,reject row
+interactions,33099,rating_out_of_range,error,rating,-1,reject row
+interactions,33740,rating_out_of_range,error,rating,-1,reject row
+interactions,33901,rating_out_of_range,error,rating,0,reject row
+interactions,34954,rating_out_of_range,error,rating,6,reject row
+interactions,35135,rating_out_of_range,error,rating,7,reject row
+interactions,35513,rating_out_of_range,error,rating,7,reject row
+interactions,36134,rating_out_of_range,error,rating,6,reject row
+interactions,37720,rating_out_of_range,error,rating,7,reject row
+interactions,37788,rating_out_of_range,error,rating,10,reject row
+interactions,37943,rating_out_of_range,error,rating,6,reject row
+interactions,38817,rating_out_of_range,error,rating,10,reject row
+interactions,38825,rating_out_of_range,error,rating,6,reject row
+interactions,39082,rating_out_of_range,error,rating,0,reject row
+interactions,39178,rating_out_of_range,error,rating,7,reject row
+interactions,39187,rating_out_of_range,error,rating,-1,reject row
+interactions,39378,rating_out_of_range,error,rating,10,reject row
+interactions,39839,rating_out_of_range,error,rating,6,reject row
+interactions,40181,rating_out_of_range,error,rating,-1,reject row
+interactions,40273,rating_out_of_range,error,rating,7,reject row
+interactions,40344,rating_out_of_range,error,rating,0,reject row
+interactions,40857,rating_out_of_range,error,rating,10,reject row
+interactions,41226,rating_out_of_range,error,rating,6,reject row
+interactions,42013,rating_out_of_range,error,rating,-1,reject row
+interactions,42068,rating_out_of_range,error,rating,6,reject row
+interactions,42793,rating_out_of_range,error,rating,6,reject row
+interactions,43609,rating_out_of_range,error,rating,-1,reject row
+interactions,43642,rating_out_of_range,error,rating,7,reject row
+interactions,44265,rating_out_of_range,error,rating,0,reject row
+interactions,46854,rating_out_of_range,error,rating,0,reject row
+interactions,47063,rating_out_of_range,error,rating,6,reject row
+interactions,48318,rating_out_of_range,error,rating,6,reject row
+interactions,49932,rating_out_of_range,error,rating,6,reject row
+interactions,50769,rating_out_of_range,error,rating,-1,reject row
+interactions,51365,rating_out_of_range,error,rating,0,reject row
+interactions,51699,rating_out_of_range,error,rating,-1,reject row
+interactions,51706,rating_out_of_range,error,rating,7,reject row
+interactions,51875,rating_out_of_range,error,rating,10,reject row
+interactions,52045,rating_out_of_range,error,rating,7,reject row
+interactions,52086,rating_out_of_range,error,rating,10,reject row
+interactions,52257,rating_out_of_range,error,rating,0,reject row
+interactions,53625,rating_out_of_range,error,rating,6,reject row
+interactions,55092,rating_out_of_range,error,rating,-1,reject row
+interactions,56354,rating_out_of_range,error,rating,10,reject row
+interactions,56527,rating_out_of_range,error,rating,10,reject row
+interactions,56774,rating_out_of_range,error,rating,7,reject row
+interactions,58026,rating_out_of_range,error,rating,7,reject row
+interactions,58541,rating_out_of_range,error,rating,10,reject row
+interactions,59551,rating_out_of_range,error,rating,10,reject row
+interactions,59982,rating_out_of_range,error,rating,0,reject row
+interactions,60084,rating_out_of_range,error,rating,6,reject row
+interactions,60732,rating_out_of_range,error,rating,6,reject row
+interactions,62987,rating_out_of_range,error,rating,0,reject row
+interactions,63817,rating_out_of_range,error,rating,0,reject row
+interactions,63838,rating_out_of_range,error,rating,0,reject row
+interactions,64160,rating_out_of_range,error,rating,10,reject row
+interactions,64888,rating_out_of_range,error,rating,-1,reject row
+interactions,65052,rating_out_of_range,error,rating,7,reject row
+interactions,65114,rating_out_of_range,error,rating,10,reject row
+interactions,65220,rating_out_of_range,error,rating,-1,reject row
+interactions,66188,rating_out_of_range,error,rating,7,reject row
+interactions,66862,rating_out_of_range,error,rating,-1,reject row
+interactions,66967,rating_out_of_range,error,rating,7,reject row
+interactions,67507,rating_out_of_range,error,rating,-1,reject row
+interactions,67818,rating_out_of_range,error,rating,6,reject row
+interactions,68581,rating_out_of_range,error,rating,-1,reject row
+interactions,69298,rating_out_of_range,error,rating,10,reject row
+interactions,69796,rating_out_of_range,error,rating,-1,reject row
+interactions,70837,rating_out_of_range,error,rating,0,reject row
+interactions,71254,rating_out_of_range,error,rating,10,reject row
+interactions,71550,rating_out_of_range,error,rating,6,reject row
+interactions,71597,rating_out_of_range,error,rating,10,reject row
+interactions,71689,rating_out_of_range,error,rating,6,reject row
+interactions,74260,rating_out_of_range,error,rating,6,reject row
+interactions,74301,rating_out_of_range,error,rating,7,reject row
+interactions,74334,rating_out_of_range,error,rating,0,reject row
+interactions,75120,rating_out_of_range,error,rating,6,reject row
+interactions,75211,rating_out_of_range,error,rating,7,reject row
+interactions,75221,rating_out_of_range,error,rating,-1,reject row
+interactions,75722,rating_out_of_range,error,rating,-1,reject row
+interactions,77036,rating_out_of_range,error,rating,6,reject row
+interactions,77081,rating_out_of_range,error,rating,0,reject row
+interactions,77313,rating_out_of_range,error,rating,7,reject row
+interactions,78140,rating_out_of_range,error,rating,7,reject row
+interactions,78723,rating_out_of_range,error,rating,10,reject row
+interactions,78986,rating_out_of_range,error,rating,7,reject row
+interactions,79184,rating_out_of_range,error,rating,10,reject row
+interactions,79473,rating_out_of_range,error,rating,-1,reject row
+interactions,79779,rating_out_of_range,error,rating,10,reject row
+interactions,79790,rating_out_of_range,error,rating,10,reject row
+interactions,80628,rating_out_of_range,error,rating,6,reject row
+interactions,80962,rating_out_of_range,error,rating,6,reject row
+interactions,80999,rating_out_of_range,error,rating,-1,reject row
+interactions,81154,rating_out_of_range,error,rating,0,reject row
+interactions,81538,rating_out_of_range,error,rating,7,reject row
+interactions,81671,rating_out_of_range,error,rating,10,reject row
+interactions,82221,rating_out_of_range,error,rating,-1,reject row
+interactions,83249,rating_out_of_range,error,rating,7,reject row
+interactions,84035,rating_out_of_range,error,rating,7,reject row
+interactions,84087,rating_out_of_range,error,rating,10,reject row
+interactions,85540,rating_out_of_range,error,rating,0,reject row
+interactions,86317,rating_out_of_range,error,rating,0,reject row
+interactions,86915,rating_out_of_range,error,rating,6,reject row
+interactions,87277,rating_out_of_range,error,rating,6,reject row
+interactions,87597,rating_out_of_range,error,rating,0,reject row
+interactions,88247,rating_out_of_range,error,rating,0,reject row
+interactions,88310,rating_out_of_range,error,rating,6,reject row
+interactions,88317,rating_out_of_range,error,rating,10,reject row
+interactions,88918,rating_out_of_range,error,rating,6,reject row
+interactions,89363,rating_out_of_range,error,rating,10,reject row
+interactions,89364,rating_out_of_range,error,rating,0,reject row
+interactions,89454,rating_out_of_range,error,rating,6,reject row
+interactions,90197,rating_out_of_range,error,rating,10,reject row
+interactions,90875,rating_out_of_range,error,rating,-1,reject row
+interactions,92019,rating_out_of_range,error,rating,6,reject row
+interactions,92063,rating_out_of_range,error,rating,10,reject row
+interactions,92190,rating_out_of_range,error,rating,-1,reject row
+interactions,92300,rating_out_of_range,error,rating,7,reject row
+interactions,92355,rating_out_of_range,error,rating,0,reject row
+interactions,92906,rating_out_of_range,error,rating,7,reject row
+interactions,93346,rating_out_of_range,error,rating,6,reject row
+interactions,93645,rating_out_of_range,error,rating,10,reject row
+interactions,94455,rating_out_of_range,error,rating,10,reject row
+interactions,94743,rating_out_of_range,error,rating,-1,reject row
+interactions,94795,rating_out_of_range,error,rating,0,reject row
+interactions,95253,rating_out_of_range,error,rating,6,reject row
+interactions,95699,rating_out_of_range,error,rating,10,reject row
+interactions,95848,rating_out_of_range,error,rating,0,reject row
+interactions,96023,rating_out_of_range,error,rating,-1,reject row
+interactions,97267,rating_out_of_range,error,rating,-1,reject row
+interactions,97440,rating_out_of_range,error,rating,6,reject row
+interactions,98259,rating_out_of_range,error,rating,10,reject row
+interactions,98776,rating_out_of_range,error,rating,6,reject row
+interactions,99326,rating_out_of_range,error,rating,10,reject row
+interactions,99360,rating_out_of_range,error,rating,10,reject row
+interactions,99453,rating_out_of_range,error,rating,6,reject row
+interactions,99473,rating_out_of_range,error,rating,6,reject row
+interactions,405,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,628,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,958,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,970,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,1107,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,1170,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,1171,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,1537,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,1618,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,1622,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,1797,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,2085,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,2129,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,2236,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,2267,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,2318,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,2377,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,2480,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,2502,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,2928,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,3213,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,3588,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,3703,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,4131,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,4215,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,4249,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,4396,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,4742,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,4787,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,5103,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,5163,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,5229,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,5659,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,6048,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,6265,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,6310,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,7094,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,7748,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,7898,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,8212,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,9066,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,9202,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,9387,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,9605,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,9655,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,9663,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,9801,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,9843,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,9864,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,9878,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,10568,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,10609,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,10711,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,11114,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,11203,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,11504,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,11605,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,11639,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,12226,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,12267,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,12574,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,12716,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,12802,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,13102,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,13362,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,13529,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,13850,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,13976,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,14139,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,14530,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,14676,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,15178,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,15929,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,15940,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,16203,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,16297,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,16394,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,16435,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,16483,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,16641,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,17464,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,17601,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,17637,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,17678,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,18330,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,18355,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,18541,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,19235,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,19862,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,20007,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,20145,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,20646,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,20733,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,21255,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,21275,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,22068,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,22106,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,22486,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,22679,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,23124,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,23348,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,23400,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,24025,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,24347,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,24492,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,24729,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,25551,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,25635,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,25755,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,25760,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,25796,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,26239,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,26270,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,26702,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,27402,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,27905,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,27909,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,28243,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,28654,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,28835,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,28891,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,28966,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,29116,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,30169,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,30242,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,30328,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,30665,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,30685,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,31070,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,31199,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,31370,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,31860,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,32132,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,32216,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,32335,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,32574,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,32673,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,32706,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,32754,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,32811,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,33432,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,33478,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,33569,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,33791,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,33794,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,33897,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,34196,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,34527,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,34545,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,34606,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,35475,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,36089,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,36923,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,37047,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,37198,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,37222,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,37418,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,37655,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,38089,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,38445,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,38928,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,38948,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,39212,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,39469,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,39590,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,40127,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,40390,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,40464,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,40584,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,40918,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,41518,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,42080,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,42381,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,42832,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,43247,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,43275,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,43929,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,44064,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,44226,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,44806,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,44965,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,45096,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,45427,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,45653,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,46038,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,46111,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,46171,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,46255,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,46440,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,46511,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,46558,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,46904,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,47010,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,47246,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,47426,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,47831,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,47948,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,47975,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,48126,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,48234,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,48763,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,48962,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,49293,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,49314,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,49337,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,49401,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,49578,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,50262,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,50767,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,50945,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,51195,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,51511,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,51790,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,52598,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,52657,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,53359,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,53592,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,53738,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,54021,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,54149,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,54553,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,54637,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,55069,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,55202,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,55398,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,55755,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,55913,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,56304,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,56351,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,56388,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,56449,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,56621,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,56909,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,58768,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,59060,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59106,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59119,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59301,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59336,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59597,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,59625,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,59891,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,60036,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,60694,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,61027,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,61477,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,61672,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,62010,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,62168,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,62357,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,62539,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,62974,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,63130,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,63622,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,63932,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,63969,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,64505,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,64816,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65028,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65034,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,65159,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65390,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65509,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65805,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,65927,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,66240,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,66287,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,66382,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,66674,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,66698,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,66828,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,66963,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,67044,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,67321,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,67504,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,68195,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,68222,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,68812,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,69546,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,69565,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,69653,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,69672,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,69699,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,69724,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,70018,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,70246,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,70280,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,70508,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,71189,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,72218,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,72245,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,72303,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,72432,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,72885,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,73347,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,73650,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,73856,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,74222,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,74541,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,74920,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,75085,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,75432,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,75541,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,76849,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,76944,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,76966,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,76999,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,77018,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,77287,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,77651,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,77721,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,77773,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,77979,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,78565,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,78771,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,79350,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,79553,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,79695,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,79741,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,79747,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,79815,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,79996,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,80133,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,80173,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,80488,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,80576,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,80664,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,80674,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,81292,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,81476,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,81909,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,82107,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,82595,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,82640,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,82666,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,82981,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,83296,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,83454,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,84460,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,84726,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,84771,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,84818,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,84820,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,84955,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,85184,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,85440,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,85453,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,85651,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,85834,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,86361,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,86478,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,86762,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,87000,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,87885,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,88785,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,89117,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,89592,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,89602,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,89633,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,89896,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,89923,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,89964,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,90348,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,90401,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,90795,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,90827,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,90869,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,91109,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,91778,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,92283,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,92686,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,92863,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,93131,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,93274,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,93299,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,93473,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,93657,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,93993,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,94129,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,94202,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,94775,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,95336,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,95772,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,96036,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,96530,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,96549,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,97116,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,97232,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,97786,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,98013,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,98424,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,98680,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,98726,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,98799,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,98877,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,98885,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,98905,timestamp_out_of_range,error,timestamp,-1,reject row
+interactions,99071,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,99187,timestamp_out_of_range,error,timestamp,0,reject row
+interactions,99636,timestamp_out_of_range,error,timestamp,4102444800,reject row
+interactions,100002,duplicate_interaction,error,user_id,527,reject later duplicates
+interactions,100003,duplicate_interaction,error,user_id,790,reject later duplicates
+interactions,100004,duplicate_interaction,error,user_id,833,reject later duplicates
+interactions,100005,duplicate_interaction,error,user_id,621,reject later duplicates
+interactions,100006,duplicate_interaction,error,user_id,181,reject later duplicates
+interactions,100007,duplicate_interaction,error,user_id,361,reject later duplicates
+interactions,100008,duplicate_interaction,error,user_id,561,reject later duplicates
+interactions,100009,duplicate_interaction,error,user_id,544,reject later duplicates
+interactions,100010,duplicate_interaction,error,user_id,268,reject later duplicates
+interactions,100011,duplicate_interaction,error,user_id,573,reject later duplicates
+interactions,100012,duplicate_interaction,error,user_id,214,reject later duplicates
+interactions,100013,duplicate_interaction,error,user_id,25,reject later duplicates
+interactions,100014,duplicate_interaction,error,user_id,301,reject later duplicates
+interactions,100015,duplicate_interaction,error,user_id,11,reject later duplicates
+interactions,100016,duplicate_interaction,error,user_id,833,reject later duplicates
+interactions,100017,duplicate_interaction,error,user_id,394,reject later duplicates
+interactions,100018,duplicate_interaction,error,user_id,338,reject later duplicates
+interactions,100019,duplicate_interaction,error,user_id,655,reject later duplicates
+interactions,100020,duplicate_interaction,error,user_id,498,reject later duplicates
+interactions,100021,duplicate_interaction,error,user_id,450,reject later duplicates
+interactions,100022,duplicate_interaction,error,user_id,11,reject later duplicates
+interactions,100023,duplicate_interaction,error,user_id,325,reject later duplicates
+interactions,100024,duplicate_interaction,error,user_id,18,reject later duplicates
+interactions,100025,duplicate_interaction,error,user_id,504,reject later duplicates
+interactions,100026,duplicate_interaction,error,user_id,52,reject later duplicates
+interactions,100027,duplicate_interaction,error,user_id,293,reject later duplicates
+interactions,100028,duplicate_interaction,error,user_id,181,reject later duplicates
+interactions,100029,duplicate_interaction,error,user_id,18,reject later duplicates
+interactions,100030,duplicate_interaction,error,user_id,49,reject later duplicates
+interactions,100031,duplicate_interaction,error,user_id,13,reject later duplicates
+interactions,100032,duplicate_interaction,error,user_id,552,reject later duplicates
+interactions,100033,duplicate_interaction,error,user_id,902,reject later duplicates
+interactions,100034,duplicate_interaction,error,user_id,125,reject later duplicates
+interactions,100035,duplicate_interaction,error,user_id,88,reject later duplicates
+interactions,100036,duplicate_interaction,error,user_id,312,reject later duplicates
+interactions,100037,duplicate_interaction,error,user_id,606,reject later duplicates
+interactions,100038,duplicate_interaction,error,user_id,372,reject later duplicates
+interactions,100039,duplicate_interaction,error,user_id,290,reject later duplicates
+interactions,100040,duplicate_interaction,error,user_id,399,reject later duplicates
+interactions,100041,duplicate_interaction,error,user_id,276,reject later duplicates
+interactions,100042,duplicate_interaction,error,user_id,248,reject later duplicates
+interactions,100043,duplicate_interaction,error,user_id,749,reject later duplicates
+interactions,100044,duplicate_interaction,error,user_id,200,reject later duplicates
+interactions,100045,duplicate_interaction,error,user_id,848,reject later duplicates
+interactions,100046,duplicate_interaction,error,user_id,893,reject later duplicates
+interactions,100047,duplicate_interaction,error,user_id,639,reject later duplicates
+interactions,100048,duplicate_interaction,error,user_id,91,reject later duplicates
+interactions,100049,duplicate_interaction,error,user_id,586,reject later duplicates
+interactions,100050,duplicate_interaction,error,user_id,284,reject later duplicates
+interactions,100051,duplicate_interaction,error,user_id,18,reject later duplicates
+interactions,100052,duplicate_interaction,error,user_id,846,reject later duplicates
+interactions,100053,duplicate_interaction,error,user_id,130,reject later duplicates
+interactions,100054,duplicate_interaction,error,user_id,682,reject later duplicates
+interactions,100055,duplicate_interaction,error,user_id,525,reject later duplicates
+interactions,100056,duplicate_interaction,error,user_id,303,reject later duplicates
+interactions,100057,duplicate_interaction,error,user_id,717,reject later duplicates
+interactions,100058,duplicate_interaction,error,user_id,94,reject later duplicates
+interactions,100059,duplicate_interaction,error,user_id,722,reject later duplicates
+interactions,100060,duplicate_interaction,error,user_id,503,reject later duplicates
+interactions,100061,duplicate_interaction,error,user_id,157,reject later duplicates
+interactions,100062,duplicate_interaction,error,user_id,398,reject later duplicates
+interactions,100063,duplicate_interaction,error,user_id,271,reject later duplicates
+interactions,100064,duplicate_interaction,error,user_id,387,reject later duplicates
+interactions,100065,duplicate_interaction,error,user_id,85,reject later duplicates
+interactions,100066,duplicate_interaction,error,user_id,766,reject later duplicates
+interactions,100067,duplicate_interaction,error,user_id,588,reject later duplicates
+interactions,100068,duplicate_interaction,error,user_id,893,reject later duplicates
+interactions,100069,duplicate_interaction,error,user_id,59,reject later duplicates
+interactions,100070,duplicate_interaction,error,user_id,614,reject later duplicates
+interactions,100071,duplicate_interaction,error,user_id,655,reject later duplicates
+interactions,100072,duplicate_interaction,error,user_id,99,reject later duplicates
+interactions,100073,duplicate_interaction,error,user_id,346,reject later duplicates
+interactions,100074,duplicate_interaction,error,user_id,184,reject later duplicates
+interactions,100075,duplicate_interaction,error,user_id,497,reject later duplicates
+interactions,100076,duplicate_interaction,error,user_id,854,reject later duplicates
+interactions,100077,duplicate_interaction,error,user_id,25,reject later duplicates
+interactions,100078,duplicate_interaction,error,user_id,498,reject later duplicates
+interactions,100079,duplicate_interaction,error,user_id,363,reject later duplicates
+interactions,100080,duplicate_interaction,error,user_id,87,reject later duplicates
+interactions,100081,duplicate_interaction,error,user_id,345,reject later duplicates
+interactions,100082,duplicate_interaction,error,user_id,488,reject later duplicates
+interactions,100083,duplicate_interaction,error,user_id,172,reject later duplicates
+interactions,100084,duplicate_interaction,error,user_id,168,reject later duplicates
+interactions,100085,duplicate_interaction,error,user_id,437,reject later duplicates
+interactions,100086,duplicate_interaction,error,user_id,709,reject later duplicates
+interactions,100087,duplicate_interaction,error,user_id,622,reject later duplicates
+interactions,100088,duplicate_interaction,error,user_id,541,reject later duplicates
+interactions,100089,duplicate_interaction,error,user_id,399,reject later duplicates
+interactions,100090,duplicate_interaction,error,user_id,774,reject later duplicates
+interactions,100091,duplicate_interaction,error,user_id,405,reject later duplicates
+interactions,100092,duplicate_interaction,error,user_id,299,reject later duplicates
+interactions,100093,duplicate_interaction,error,user_id,414,reject later duplicates
+interactions,100094,duplicate_interaction,error,user_id,145,reject later duplicates
+interactions,100095,duplicate_interaction,error,user_id,457,reject later duplicates
+interactions,100096,duplicate_interaction,error,user_id,151,reject later duplicates
+interactions,100097,duplicate_interaction,error,user_id,256,reject later duplicates
+interactions,100098,duplicate_interaction,error,user_id,97,reject later duplicates
+interactions,100099,duplicate_interaction,error,user_id,634,reject later duplicates
+interactions,100100,duplicate_interaction,error,user_id,271,reject later duplicates
+interactions,100101,duplicate_interaction,error,user_id,60,reject later duplicates
+interactions,100102,duplicate_interaction,error,user_id,790,reject later duplicates
+interactions,100103,duplicate_interaction,error,user_id,330,reject later duplicates
+interactions,100104,duplicate_interaction,error,user_id,60,reject later duplicates
+interactions,100105,duplicate_interaction,error,user_id,339,reject later duplicates
+interactions,100106,duplicate_interaction,error,user_id,280,reject later duplicates
+interactions,100107,duplicate_interaction,error,user_id,522,reject later duplicates
+interactions,100108,duplicate_interaction,error,user_id,94,reject later duplicates
+interactions,100109,duplicate_interaction,error,user_id,152,reject later duplicates
+interactions,100110,duplicate_interaction,error,user_id,796,reject later duplicates
+interactions,100111,duplicate_interaction,error,user_id,537,reject later duplicates
+interactions,100112,duplicate_interaction,error,user_id,606,reject later duplicates
+interactions,100113,duplicate_interaction,error,user_id,928,reject later duplicates
+interactions,100114,duplicate_interaction,error,user_id,655,reject later duplicates
+interactions,100115,duplicate_interaction,error,user_id,530,reject later duplicates
+interactions,100116,duplicate_interaction,error,user_id,582,reject later duplicates
+interactions,100117,duplicate_interaction,error,user_id,561,reject later duplicates
+interactions,100118,duplicate_interaction,error,user_id,500,reject later duplicates
+interactions,100119,duplicate_interaction,error,user_id,806,reject later duplicates
+interactions,100120,duplicate_interaction,error,user_id,500,reject later duplicates
+interactions,100121,duplicate_interaction,error,user_id,234,reject later duplicates
+interactions,100122,duplicate_interaction,error,user_id,18,reject later duplicates
+interactions,100123,duplicate_interaction,error,user_id,91,reject later duplicates
+interactions,100124,duplicate_interaction,error,user_id,100,reject later duplicates
+interactions,100125,duplicate_interaction,error,user_id,678,reject later duplicates
+interactions,100126,duplicate_interaction,error,user_id,883,reject later duplicates
+interactions,100127,duplicate_interaction,error,user_id,174,reject later duplicates
+interactions,100128,duplicate_interaction,error,user_id,119,reject later duplicates
+interactions,100129,duplicate_interaction,error,user_id,561,reject later duplicates
+interactions,100130,duplicate_interaction,error,user_id,665,reject later duplicates
+interactions,100131,duplicate_interaction,error,user_id,727,reject later duplicates
+interactions,100132,duplicate_interaction,error,user_id,553,reject later duplicates
+interactions,100133,duplicate_interaction,error,user_id,726,reject later duplicates
+interactions,100134,duplicate_interaction,error,user_id,546,reject later duplicates
+interactions,100135,duplicate_interaction,error,user_id,451,reject later duplicates
+interactions,100136,duplicate_interaction,error,user_id,187,reject later duplicates
+interactions,100137,duplicate_interaction,error,user_id,361,reject later duplicates
+interactions,100138,duplicate_interaction,error,user_id,244,reject later duplicates
+interactions,100139,duplicate_interaction,error,user_id,774,reject later duplicates
+interactions,100140,duplicate_interaction,error,user_id,328,reject later duplicates
+interactions,100141,duplicate_interaction,error,user_id,854,reject later duplicates
+interactions,100142,duplicate_interaction,error,user_id,862,reject later duplicates
+interactions,100143,duplicate_interaction,error,user_id,405,reject later duplicates
+interactions,100144,duplicate_interaction,error,user_id,1,reject later duplicates
+interactions,100145,duplicate_interaction,error,user_id,194,reject later duplicates
+interactions,100146,duplicate_interaction,error,user_id,307,reject later duplicates
+interactions,100147,duplicate_interaction,error,user_id,269,reject later duplicates
+interactions,100148,duplicate_interaction,error,user_id,555,reject later duplicates
+interactions,100149,duplicate_interaction,error,user_id,474,reject later duplicates
+interactions,100150,duplicate_interaction,error,user_id,311,reject later duplicates
+interactions,100151,duplicate_interaction,error,user_id,18,reject later duplicates
+interactions,100152,duplicate_interaction,error,user_id,724,reject later duplicates
+interactions,100153,duplicate_interaction,error,user_id,463,reject later duplicates
+interactions,100154,duplicate_interaction,error,user_id,441,reject later duplicates
+interactions,100155,duplicate_interaction,error,user_id,774,reject later duplicates
+interactions,100156,duplicate_interaction,error,user_id,29,reject later duplicates
+interactions,100157,duplicate_interaction,error,user_id,699,reject later duplicates
+interactions,100158,duplicate_interaction,error,user_id,7,reject later duplicates
+interactions,100159,duplicate_interaction,error,user_id,812,reject later duplicates
+interactions,100160,duplicate_interaction,error,user_id,738,reject later duplicates
+interactions,100161,duplicate_interaction,error,user_id,447,reject later duplicates
+interactions,100162,duplicate_interaction,error,user_id,177,reject later duplicates
+interactions,100163,duplicate_interaction,error,user_id,448,reject later duplicates
+interactions,100164,duplicate_interaction,error,user_id,705,reject later duplicates
+interactions,100165,duplicate_interaction,error,user_id,332,reject later duplicates
+interactions,100166,duplicate_interaction,error,user_id,655,reject later duplicates
+interactions,100167,duplicate_interaction,error,user_id,216,reject later duplicates
+interactions,100168,duplicate_interaction,error,user_id,618,reject later duplicates
+interactions,100169,duplicate_interaction,error,user_id,303,reject later duplicates
+interactions,100170,duplicate_interaction,error,user_id,405,reject later duplicates
+interactions,100171,duplicate_interaction,error,user_id,757,reject later duplicates
+interactions,100172,duplicate_interaction,error,user_id,804,reject later duplicates
+interactions,100173,duplicate_interaction,error,user_id,354,reject later duplicates
+interactions,100174,duplicate_interaction,error,user_id,234,reject later duplicates
+interactions,100175,duplicate_interaction,error,user_id,85,reject later duplicates
+interactions,100176,duplicate_interaction,error,user_id,186,reject later duplicates
+interactions,100177,duplicate_interaction,error,user_id,190,reject later duplicates
+interactions,100178,duplicate_interaction,error,user_id,189,reject later duplicates
+interactions,100179,duplicate_interaction,error,user_id,250,reject later duplicates
+interactions,100180,duplicate_interaction,error,user_id,422,reject later duplicates
+interactions,100181,duplicate_interaction,error,user_id,498,reject later duplicates
+interactions,100182,duplicate_interaction,error,user_id,145,reject later duplicates
+interactions,100183,duplicate_interaction,error,user_id,253,reject later duplicates
+interactions,100184,duplicate_interaction,error,user_id,368,reject later duplicates
+interactions,100185,duplicate_interaction,error,user_id,657,reject later duplicates
+interactions,100186,duplicate_interaction,error,user_id,303,reject later duplicates
+interactions,100187,duplicate_interaction,error,user_id,201,reject later duplicates
+interactions,100188,duplicate_interaction,error,user_id,345,reject later duplicates
+interactions,100189,duplicate_interaction,error,user_id,288,reject later duplicates
+interactions,100190,duplicate_interaction,error,user_id,532,reject later duplicates
+interactions,100191,duplicate_interaction,error,user_id,846,reject later duplicates
+interactions,100192,duplicate_interaction,error,user_id,551,reject later duplicates
+interactions,100193,duplicate_interaction,error,user_id,892,reject later duplicates
+interactions,100194,duplicate_interaction,error,user_id,551,reject later duplicates
+interactions,100195,duplicate_interaction,error,user_id,581,reject later duplicates
+interactions,100196,duplicate_interaction,error,user_id,328,reject later duplicates
+interactions,100197,duplicate_interaction,error,user_id,554,reject later duplicates
+interactions,100198,duplicate_interaction,error,user_id,609,reject later duplicates
+interactions,100199,duplicate_interaction,error,user_id,308,reject later duplicates
+interactions,100200,duplicate_interaction,error,user_id,626,reject later duplicates
+interactions,100201,duplicate_interaction,error,user_id,358,reject later duplicates
+interactions,181,orphan_user_id,error,user_id,2010,reject row
+interactions,423,orphan_user_id,error,user_id,1976,reject row
+interactions,541,orphan_user_id,error,user_id,2105,reject row
+interactions,606,orphan_user_id,error,user_id,2033,reject row
+interactions,1046,orphan_user_id,error,user_id,2042,reject row
+interactions,1993,orphan_user_id,error,user_id,1993,reject row
+interactions,3701,orphan_user_id,error,user_id,1967,reject row
+interactions,4063,orphan_user_id,error,user_id,2102,reject row
+interactions,4088,orphan_user_id,error,user_id,2020,reject row
+interactions,5280,orphan_user_id,error,user_id,2135,reject row
+interactions,5285,orphan_user_id,error,user_id,2044,reject row
+interactions,5743,orphan_user_id,error,user_id,1969,reject row
+interactions,7230,orphan_user_id,error,user_id,2128,reject row
+interactions,8544,orphan_user_id,error,user_id,2028,reject row
+interactions,8609,orphan_user_id,error,user_id,2024,reject row
+interactions,8661,orphan_user_id,error,user_id,2048,reject row
+interactions,9271,orphan_user_id,error,user_id,2109,reject row
+interactions,9674,orphan_user_id,error,user_id,1951,reject row
+interactions,9809,orphan_user_id,error,user_id,2012,reject row
+interactions,10625,orphan_user_id,error,user_id,2120,reject row
+interactions,11607,orphan_user_id,error,user_id,2089,reject row
+interactions,11678,orphan_user_id,error,user_id,2100,reject row
+interactions,12287,orphan_user_id,error,user_id,2008,reject row
+interactions,12381,orphan_user_id,error,user_id,2093,reject row
+interactions,12962,orphan_user_id,error,user_id,2104,reject row
+interactions,13203,orphan_user_id,error,user_id,2047,reject row
+interactions,13432,orphan_user_id,error,user_id,2112,reject row
+interactions,13775,orphan_user_id,error,user_id,2092,reject row
+interactions,14170,orphan_user_id,error,user_id,2084,reject row
+interactions,14339,orphan_user_id,error,user_id,2027,reject row
+interactions,14503,orphan_user_id,error,user_id,1978,reject row
+interactions,14707,orphan_user_id,error,user_id,2142,reject row
+interactions,14829,orphan_user_id,error,user_id,1949,reject row
+interactions,15141,orphan_user_id,error,user_id,2034,reject row
+interactions,15616,orphan_user_id,error,user_id,2095,reject row
+interactions,16108,orphan_user_id,error,user_id,2023,reject row
+interactions,16725,orphan_user_id,error,user_id,2014,reject row
+interactions,17832,orphan_user_id,error,user_id,1995,reject row
+interactions,17868,orphan_user_id,error,user_id,2037,reject row
+interactions,18169,orphan_user_id,error,user_id,1943,reject row
+interactions,19038,orphan_user_id,error,user_id,1957,reject row
+interactions,19094,orphan_user_id,error,user_id,2015,reject row
+interactions,19101,orphan_user_id,error,user_id,2038,reject row
+interactions,19104,orphan_user_id,error,user_id,2004,reject row
+interactions,23060,orphan_user_id,error,user_id,2076,reject row
+interactions,23171,orphan_user_id,error,user_id,2123,reject row
+interactions,23645,orphan_user_id,error,user_id,2049,reject row
+interactions,23769,orphan_user_id,error,user_id,2046,reject row
+interactions,23783,orphan_user_id,error,user_id,1945,reject row
+interactions,23867,orphan_user_id,error,user_id,2115,reject row
+interactions,24062,orphan_user_id,error,user_id,1950,reject row
+interactions,24126,orphan_user_id,error,user_id,2043,reject row
+interactions,24174,orphan_user_id,error,user_id,2125,reject row
+interactions,24484,orphan_user_id,error,user_id,2133,reject row
+interactions,25684,orphan_user_id,error,user_id,1988,reject row
+interactions,26088,orphan_user_id,error,user_id,2127,reject row
+interactions,26431,orphan_user_id,error,user_id,2070,reject row
+interactions,27023,orphan_user_id,error,user_id,1956,reject row
+interactions,27499,orphan_user_id,error,user_id,2113,reject row
+interactions,27674,orphan_user_id,error,user_id,2139,reject row
+interactions,28096,orphan_user_id,error,user_id,2138,reject row
+interactions,28123,orphan_user_id,error,user_id,2003,reject row
+interactions,28701,orphan_user_id,error,user_id,2130,reject row
+interactions,28716,orphan_user_id,error,user_id,2075,reject row
+interactions,28980,orphan_user_id,error,user_id,2077,reject row
+interactions,29287,orphan_user_id,error,user_id,2062,reject row
+interactions,29717,orphan_user_id,error,user_id,2081,reject row
+interactions,30113,orphan_user_id,error,user_id,2097,reject row
+interactions,30547,orphan_user_id,error,user_id,1965,reject row
+interactions,30849,orphan_user_id,error,user_id,1996,reject row
+interactions,31154,orphan_user_id,error,user_id,1954,reject row
+interactions,32033,orphan_user_id,error,user_id,1960,reject row
+interactions,32622,orphan_user_id,error,user_id,2005,reject row
+interactions,32981,orphan_user_id,error,user_id,2068,reject row
+interactions,33055,orphan_user_id,error,user_id,2131,reject row
+interactions,33493,orphan_user_id,error,user_id,2016,reject row
+interactions,33497,orphan_user_id,error,user_id,2078,reject row
+interactions,34199,orphan_user_id,error,user_id,1989,reject row
+interactions,34838,orphan_user_id,error,user_id,1991,reject row
+interactions,35122,orphan_user_id,error,user_id,2126,reject row
+interactions,35172,orphan_user_id,error,user_id,2129,reject row
+interactions,35722,orphan_user_id,error,user_id,1947,reject row
+interactions,35724,orphan_user_id,error,user_id,2114,reject row
+interactions,36627,orphan_user_id,error,user_id,1985,reject row
+interactions,36975,orphan_user_id,error,user_id,2132,reject row
+interactions,37451,orphan_user_id,error,user_id,2017,reject row
+interactions,37936,orphan_user_id,error,user_id,2061,reject row
+interactions,38749,orphan_user_id,error,user_id,1963,reject row
+interactions,39210,orphan_user_id,error,user_id,2064,reject row
+interactions,39413,orphan_user_id,error,user_id,2011,reject row
+interactions,39657,orphan_user_id,error,user_id,2073,reject row
+interactions,39817,orphan_user_id,error,user_id,2019,reject row
+interactions,40454,orphan_user_id,error,user_id,1980,reject row
+interactions,40877,orphan_user_id,error,user_id,1999,reject row
+interactions,41222,orphan_user_id,error,user_id,2001,reject row
+interactions,41257,orphan_user_id,error,user_id,2041,reject row
+interactions,41927,orphan_user_id,error,user_id,2013,reject row
+interactions,42411,orphan_user_id,error,user_id,2096,reject row
+interactions,42660,orphan_user_id,error,user_id,2060,reject row
+interactions,43666,orphan_user_id,error,user_id,1961,reject row
+interactions,44717,orphan_user_id,error,user_id,2021,reject row
+interactions,44822,orphan_user_id,error,user_id,2106,reject row
+interactions,45003,orphan_user_id,error,user_id,1977,reject row
+interactions,45202,orphan_user_id,error,user_id,1966,reject row
+interactions,46190,orphan_user_id,error,user_id,1986,reject row
+interactions,46361,orphan_user_id,error,user_id,2136,reject row
+interactions,46736,orphan_user_id,error,user_id,2071,reject row
+interactions,46805,orphan_user_id,error,user_id,1984,reject row
+interactions,47154,orphan_user_id,error,user_id,2122,reject row
+interactions,47312,orphan_user_id,error,user_id,1970,reject row
+interactions,48142,orphan_user_id,error,user_id,2083,reject row
+interactions,48179,orphan_user_id,error,user_id,1953,reject row
+interactions,48369,orphan_user_id,error,user_id,1973,reject row
+interactions,48382,orphan_user_id,error,user_id,2053,reject row
+interactions,48499,orphan_user_id,error,user_id,2006,reject row
+interactions,48644,orphan_user_id,error,user_id,1990,reject row
+interactions,49064,orphan_user_id,error,user_id,2141,reject row
+interactions,49218,orphan_user_id,error,user_id,1962,reject row
+interactions,50211,orphan_user_id,error,user_id,2117,reject row
+interactions,50638,orphan_user_id,error,user_id,1955,reject row
+interactions,52104,orphan_user_id,error,user_id,2058,reject row
+interactions,52930,orphan_user_id,error,user_id,1959,reject row
+interactions,54297,orphan_user_id,error,user_id,2101,reject row
+interactions,54364,orphan_user_id,error,user_id,2119,reject row
+interactions,55537,orphan_user_id,error,user_id,2103,reject row
+interactions,57533,orphan_user_id,error,user_id,2066,reject row
+interactions,57682,orphan_user_id,error,user_id,2009,reject row
+interactions,58053,orphan_user_id,error,user_id,2026,reject row
+interactions,58415,orphan_user_id,error,user_id,2137,reject row
+interactions,58763,orphan_user_id,error,user_id,2025,reject row
+interactions,58908,orphan_user_id,error,user_id,2067,reject row
+interactions,59109,orphan_user_id,error,user_id,1981,reject row
+interactions,59657,orphan_user_id,error,user_id,2069,reject row
+interactions,59856,orphan_user_id,error,user_id,2099,reject row
+interactions,60935,orphan_user_id,error,user_id,2007,reject row
+interactions,61657,orphan_user_id,error,user_id,1952,reject row
+interactions,61823,orphan_user_id,error,user_id,2087,reject row
+interactions,62286,orphan_user_id,error,user_id,2051,reject row
+interactions,63207,orphan_user_id,error,user_id,2040,reject row
+interactions,63613,orphan_user_id,error,user_id,2030,reject row
+interactions,64311,orphan_user_id,error,user_id,2036,reject row
+interactions,64419,orphan_user_id,error,user_id,2111,reject row
+interactions,65223,orphan_user_id,error,user_id,2052,reject row
+interactions,67445,orphan_user_id,error,user_id,1994,reject row
+interactions,67587,orphan_user_id,error,user_id,1998,reject row
+interactions,67643,orphan_user_id,error,user_id,2085,reject row
+interactions,68241,orphan_user_id,error,user_id,2108,reject row
+interactions,68560,orphan_user_id,error,user_id,2086,reject row
+interactions,69059,orphan_user_id,error,user_id,1992,reject row
+interactions,70157,orphan_user_id,error,user_id,2000,reject row
+interactions,70357,orphan_user_id,error,user_id,2057,reject row
+interactions,70644,orphan_user_id,error,user_id,2082,reject row
+interactions,70926,orphan_user_id,error,user_id,1968,reject row
+interactions,71155,orphan_user_id,error,user_id,2039,reject row
+interactions,72411,orphan_user_id,error,user_id,1958,reject row
+interactions,74038,orphan_user_id,error,user_id,2124,reject row
+interactions,74325,orphan_user_id,error,user_id,2074,reject row
+interactions,74720,orphan_user_id,error,user_id,2055,reject row
+interactions,75721,orphan_user_id,error,user_id,2134,reject row
+interactions,76905,orphan_user_id,error,user_id,1975,reject row
+interactions,76973,orphan_user_id,error,user_id,1964,reject row
+interactions,77459,orphan_user_id,error,user_id,2088,reject row
+interactions,77794,orphan_user_id,error,user_id,2118,reject row
+interactions,77836,orphan_user_id,error,user_id,1982,reject row
+interactions,77876,orphan_user_id,error,user_id,1997,reject row
+interactions,79471,orphan_user_id,error,user_id,2056,reject row
+interactions,80449,orphan_user_id,error,user_id,1987,reject row
+interactions,80693,orphan_user_id,error,user_id,2029,reject row
+interactions,80982,orphan_user_id,error,user_id,2031,reject row
+interactions,81021,orphan_user_id,error,user_id,1948,reject row
+interactions,81148,orphan_user_id,error,user_id,2022,reject row
+interactions,81250,orphan_user_id,error,user_id,2121,reject row
+interactions,82072,orphan_user_id,error,user_id,2065,reject row
+interactions,82958,orphan_user_id,error,user_id,2035,reject row
+interactions,84070,orphan_user_id,error,user_id,1983,reject row
+interactions,84407,orphan_user_id,error,user_id,2107,reject row
+interactions,84690,orphan_user_id,error,user_id,2090,reject row
+interactions,85717,orphan_user_id,error,user_id,2045,reject row
+interactions,85837,orphan_user_id,error,user_id,1972,reject row
+interactions,86409,orphan_user_id,error,user_id,2018,reject row
+interactions,87096,orphan_user_id,error,user_id,2002,reject row
+interactions,87209,orphan_user_id,error,user_id,1944,reject row
+interactions,87528,orphan_user_id,error,user_id,1974,reject row
+interactions,87672,orphan_user_id,error,user_id,2110,reject row
+interactions,88732,orphan_user_id,error,user_id,2091,reject row
+interactions,88802,orphan_user_id,error,user_id,2050,reject row
+interactions,88861,orphan_user_id,error,user_id,2140,reject row
+interactions,89068,orphan_user_id,error,user_id,2072,reject row
+interactions,89368,orphan_user_id,error,user_id,2063,reject row
+interactions,89600,orphan_user_id,error,user_id,1946,reject row
+interactions,89974,orphan_user_id,error,user_id,2032,reject row
+interactions,91043,orphan_user_id,error,user_id,2054,reject row
+interactions,91175,orphan_user_id,error,user_id,2080,reject row
+interactions,92198,orphan_user_id,error,user_id,1971,reject row
+interactions,92677,orphan_user_id,error,user_id,1979,reject row
+interactions,93074,orphan_user_id,error,user_id,2094,reject row
+interactions,94089,orphan_user_id,error,user_id,2079,reject row
+interactions,98376,orphan_user_id,error,user_id,2098,reject row
+interactions,99139,orphan_user_id,error,user_id,2059,reject row
+interactions,99359,orphan_user_id,error,user_id,2116,reject row
+interactions,708,orphan_item_id,error,item_id,2734,reject row
+interactions,733,orphan_item_id,error,item_id,2786,reject row
+interactions,1359,orphan_item_id,error,item_id,2735,reject row
+interactions,2612,orphan_item_id,error,item_id,2731,reject row
+interactions,2800,orphan_item_id,error,item_id,2863,reject row
+interactions,3357,orphan_item_id,error,item_id,2758,reject row
+interactions,3706,orphan_item_id,error,item_id,2767,reject row
+interactions,4703,orphan_item_id,error,item_id,2804,reject row
+interactions,4786,orphan_item_id,error,item_id,2708,reject row
+interactions,4905,orphan_item_id,error,item_id,2706,reject row
+interactions,5390,orphan_item_id,error,item_id,2711,reject row
+interactions,5411,orphan_item_id,error,item_id,2877,reject row
+interactions,5856,orphan_item_id,error,item_id,2806,reject row
+interactions,6264,orphan_item_id,error,item_id,2875,reject row
+interactions,6328,orphan_item_id,error,item_id,2707,reject row
+interactions,6603,orphan_item_id,error,item_id,2780,reject row
+interactions,6634,orphan_item_id,error,item_id,2864,reject row
+interactions,8466,orphan_item_id,error,item_id,2689,reject row
+interactions,8670,orphan_item_id,error,item_id,2871,reject row
+interactions,9241,orphan_item_id,error,item_id,2683,reject row
+interactions,9748,orphan_item_id,error,item_id,2782,reject row
+interactions,9950,orphan_item_id,error,item_id,2762,reject row
+interactions,10674,orphan_item_id,error,item_id,2840,reject row
+interactions,11151,orphan_item_id,error,item_id,2746,reject row
+interactions,11665,orphan_item_id,error,item_id,2829,reject row
+interactions,11684,orphan_item_id,error,item_id,2835,reject row
+interactions,11735,orphan_item_id,error,item_id,2797,reject row
+interactions,11910,orphan_item_id,error,item_id,2747,reject row
+interactions,12671,orphan_item_id,error,item_id,2743,reject row
+interactions,13429,orphan_item_id,error,item_id,2827,reject row
+interactions,14175,orphan_item_id,error,item_id,2740,reject row
+interactions,14483,orphan_item_id,error,item_id,2733,reject row
+interactions,14489,orphan_item_id,error,item_id,2717,reject row
+interactions,16795,orphan_item_id,error,item_id,2727,reject row
+interactions,16855,orphan_item_id,error,item_id,2760,reject row
+interactions,18262,orphan_item_id,error,item_id,2691,reject row
+interactions,18591,orphan_item_id,error,item_id,2702,reject row
+interactions,20049,orphan_item_id,error,item_id,2850,reject row
+interactions,20180,orphan_item_id,error,item_id,2737,reject row
+interactions,20208,orphan_item_id,error,item_id,2765,reject row
+interactions,21005,orphan_item_id,error,item_id,2715,reject row
+interactions,21796,orphan_item_id,error,item_id,2686,reject row
+interactions,21856,orphan_item_id,error,item_id,2705,reject row
+interactions,21919,orphan_item_id,error,item_id,2776,reject row
+interactions,22907,orphan_item_id,error,item_id,2868,reject row
+interactions,23011,orphan_item_id,error,item_id,2716,reject row
+interactions,24928,orphan_item_id,error,item_id,2741,reject row
+interactions,25357,orphan_item_id,error,item_id,2752,reject row
+interactions,25363,orphan_item_id,error,item_id,2777,reject row
+interactions,26448,orphan_item_id,error,item_id,2745,reject row
+interactions,26604,orphan_item_id,error,item_id,2838,reject row
+interactions,26662,orphan_item_id,error,item_id,2881,reject row
+interactions,26964,orphan_item_id,error,item_id,2853,reject row
+interactions,27325,orphan_item_id,error,item_id,2792,reject row
+interactions,28413,orphan_item_id,error,item_id,2861,reject row
+interactions,28570,orphan_item_id,error,item_id,2824,reject row
+interactions,29777,orphan_item_id,error,item_id,2721,reject row
+interactions,30123,orphan_item_id,error,item_id,2801,reject row
+interactions,30310,orphan_item_id,error,item_id,2784,reject row
+interactions,30676,orphan_item_id,error,item_id,2842,reject row
+interactions,30763,orphan_item_id,error,item_id,2855,reject row
+interactions,31142,orphan_item_id,error,item_id,2751,reject row
+interactions,31515,orphan_item_id,error,item_id,2699,reject row
+interactions,33237,orphan_item_id,error,item_id,2834,reject row
+interactions,33649,orphan_item_id,error,item_id,2876,reject row
+interactions,34041,orphan_item_id,error,item_id,2867,reject row
+interactions,34678,orphan_item_id,error,item_id,2787,reject row
+interactions,35774,orphan_item_id,error,item_id,2793,reject row
+interactions,35978,orphan_item_id,error,item_id,2709,reject row
+interactions,36418,orphan_item_id,error,item_id,2862,reject row
+interactions,36993,orphan_item_id,error,item_id,2749,reject row
+interactions,37063,orphan_item_id,error,item_id,2851,reject row
+interactions,37653,orphan_item_id,error,item_id,2723,reject row
+interactions,38056,orphan_item_id,error,item_id,2710,reject row
+interactions,38369,orphan_item_id,error,item_id,2781,reject row
+interactions,38885,orphan_item_id,error,item_id,2685,reject row
+interactions,39256,orphan_item_id,error,item_id,2761,reject row
+interactions,39442,orphan_item_id,error,item_id,2772,reject row
+interactions,39899,orphan_item_id,error,item_id,2778,reject row
+interactions,39941,orphan_item_id,error,item_id,2719,reject row
+interactions,40107,orphan_item_id,error,item_id,2818,reject row
+interactions,40808,orphan_item_id,error,item_id,2847,reject row
+interactions,40858,orphan_item_id,error,item_id,2852,reject row
+interactions,41780,orphan_item_id,error,item_id,2825,reject row
+interactions,42563,orphan_item_id,error,item_id,2766,reject row
+interactions,42921,orphan_item_id,error,item_id,2858,reject row
+interactions,44103,orphan_item_id,error,item_id,2802,reject row
+interactions,44224,orphan_item_id,error,item_id,2774,reject row
+interactions,44662,orphan_item_id,error,item_id,2769,reject row
+interactions,46226,orphan_item_id,error,item_id,2764,reject row
+interactions,47150,orphan_item_id,error,item_id,2729,reject row
+interactions,47468,orphan_item_id,error,item_id,2870,reject row
+interactions,47777,orphan_item_id,error,item_id,2732,reject row
+interactions,48081,orphan_item_id,error,item_id,2694,reject row
+interactions,49566,orphan_item_id,error,item_id,2697,reject row
+interactions,49839,orphan_item_id,error,item_id,2846,reject row
+interactions,49991,orphan_item_id,error,item_id,2799,reject row
+interactions,50464,orphan_item_id,error,item_id,2783,reject row
+interactions,50697,orphan_item_id,error,item_id,2798,reject row
+interactions,50950,orphan_item_id,error,item_id,2857,reject row
+interactions,51097,orphan_item_id,error,item_id,2800,reject row
+interactions,51428,orphan_item_id,error,item_id,2848,reject row
+interactions,51440,orphan_item_id,error,item_id,2836,reject row
+interactions,51688,orphan_item_id,error,item_id,2809,reject row
+interactions,52543,orphan_item_id,error,item_id,2700,reject row
+interactions,53947,orphan_item_id,error,item_id,2725,reject row
+interactions,54096,orphan_item_id,error,item_id,2816,reject row
+interactions,54796,orphan_item_id,error,item_id,2754,reject row
+interactions,55212,orphan_item_id,error,item_id,2814,reject row
+interactions,56464,orphan_item_id,error,item_id,2693,reject row
+interactions,57001,orphan_item_id,error,item_id,2771,reject row
+interactions,58332,orphan_item_id,error,item_id,2808,reject row
+interactions,58542,orphan_item_id,error,item_id,2832,reject row
+interactions,58787,orphan_item_id,error,item_id,2701,reject row
+interactions,59088,orphan_item_id,error,item_id,2724,reject row
+interactions,59584,orphan_item_id,error,item_id,2822,reject row
+interactions,59650,orphan_item_id,error,item_id,2803,reject row
+interactions,60564,orphan_item_id,error,item_id,2826,reject row
+interactions,60774,orphan_item_id,error,item_id,2820,reject row
+interactions,61242,orphan_item_id,error,item_id,2869,reject row
+interactions,62034,orphan_item_id,error,item_id,2805,reject row
+interactions,62729,orphan_item_id,error,item_id,2688,reject row
+interactions,63190,orphan_item_id,error,item_id,2730,reject row
+interactions,63544,orphan_item_id,error,item_id,2849,reject row
+interactions,63661,orphan_item_id,error,item_id,2812,reject row
+interactions,63831,orphan_item_id,error,item_id,2728,reject row
+interactions,63846,orphan_item_id,error,item_id,2839,reject row
+interactions,63848,orphan_item_id,error,item_id,2841,reject row
+interactions,64064,orphan_item_id,error,item_id,2874,reject row
+interactions,64354,orphan_item_id,error,item_id,2759,reject row
+interactions,64405,orphan_item_id,error,item_id,2815,reject row
+interactions,64682,orphan_item_id,error,item_id,2879,reject row
+interactions,65890,orphan_item_id,error,item_id,2714,reject row
+interactions,66299,orphan_item_id,error,item_id,2756,reject row
+interactions,67098,orphan_item_id,error,item_id,2854,reject row
+interactions,67286,orphan_item_id,error,item_id,2682,reject row
+interactions,67462,orphan_item_id,error,item_id,2878,reject row
+interactions,67671,orphan_item_id,error,item_id,2794,reject row
+interactions,68468,orphan_item_id,error,item_id,2845,reject row
+interactions,68662,orphan_item_id,error,item_id,2750,reject row
+interactions,69175,orphan_item_id,error,item_id,2860,reject row
+interactions,69196,orphan_item_id,error,item_id,2807,reject row
+interactions,69202,orphan_item_id,error,item_id,2859,reject row
+interactions,69765,orphan_item_id,error,item_id,2726,reject row
+interactions,70204,orphan_item_id,error,item_id,2779,reject row
+interactions,70444,orphan_item_id,error,item_id,2736,reject row
+interactions,71027,orphan_item_id,error,item_id,2687,reject row
+interactions,71740,orphan_item_id,error,item_id,2817,reject row
+interactions,72340,orphan_item_id,error,item_id,2831,reject row
+interactions,73786,orphan_item_id,error,item_id,2823,reject row
+interactions,73911,orphan_item_id,error,item_id,2819,reject row
+interactions,74655,orphan_item_id,error,item_id,2872,reject row
+interactions,74681,orphan_item_id,error,item_id,2720,reject row
+interactions,74930,orphan_item_id,error,item_id,2830,reject row
+interactions,75679,orphan_item_id,error,item_id,2695,reject row
+interactions,75690,orphan_item_id,error,item_id,2773,reject row
+interactions,75707,orphan_item_id,error,item_id,2684,reject row
+interactions,76158,orphan_item_id,error,item_id,2880,reject row
+interactions,76608,orphan_item_id,error,item_id,2712,reject row
+interactions,76651,orphan_item_id,error,item_id,2753,reject row
+interactions,77272,orphan_item_id,error,item_id,2775,reject row
+interactions,77398,orphan_item_id,error,item_id,2866,reject row
+interactions,77437,orphan_item_id,error,item_id,2865,reject row
+interactions,77673,orphan_item_id,error,item_id,2704,reject row
+interactions,78170,orphan_item_id,error,item_id,2810,reject row
+interactions,78970,orphan_item_id,error,item_id,2828,reject row
+interactions,79194,orphan_item_id,error,item_id,2789,reject row
+interactions,79754,orphan_item_id,error,item_id,2738,reject row
+interactions,80977,orphan_item_id,error,item_id,2785,reject row
+interactions,81318,orphan_item_id,error,item_id,2821,reject row
+interactions,83046,orphan_item_id,error,item_id,2790,reject row
+interactions,83844,orphan_item_id,error,item_id,2833,reject row
+interactions,84108,orphan_item_id,error,item_id,2770,reject row
+interactions,84655,orphan_item_id,error,item_id,2692,reject row
+interactions,84735,orphan_item_id,error,item_id,2813,reject row
+interactions,85206,orphan_item_id,error,item_id,2757,reject row
+interactions,85474,orphan_item_id,error,item_id,2696,reject row
+interactions,85533,orphan_item_id,error,item_id,2698,reject row
+interactions,86057,orphan_item_id,error,item_id,2791,reject row
+interactions,86085,orphan_item_id,error,item_id,2742,reject row
+interactions,87765,orphan_item_id,error,item_id,2844,reject row
+interactions,88358,orphan_item_id,error,item_id,2837,reject row
+interactions,88590,orphan_item_id,error,item_id,2690,reject row
+interactions,88754,orphan_item_id,error,item_id,2755,reject row
+interactions,89839,orphan_item_id,error,item_id,2748,reject row
+interactions,91398,orphan_item_id,error,item_id,2713,reject row
+interactions,91525,orphan_item_id,error,item_id,2788,reject row
+interactions,91935,orphan_item_id,error,item_id,2796,reject row
+interactions,94216,orphan_item_id,error,item_id,2843,reject row
+interactions,95077,orphan_item_id,error,item_id,2739,reject row
+interactions,95193,orphan_item_id,error,item_id,2763,reject row
+interactions,95836,orphan_item_id,error,item_id,2856,reject row
+interactions,96722,orphan_item_id,error,item_id,2744,reject row
+interactions,96868,orphan_item_id,error,item_id,2795,reject row
+interactions,97341,orphan_item_id,error,item_id,2768,reject row
+interactions,98853,orphan_item_id,error,item_id,2703,reject row
+interactions,98942,orphan_item_id,error,item_id,2811,reject row
+interactions,99049,orphan_item_id,error,item_id,2873,reject row
+interactions,99679,orphan_item_id,error,item_id,2718,reject row
+interactions,99827,orphan_item_id,error,item_id,2722,reject row

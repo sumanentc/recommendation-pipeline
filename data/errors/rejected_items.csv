@@ -1,0 +1,4 @@
+source_line,item_id,title,release_date,genres,failed_rules
+1684,728,Junior (1994),01-Jan-1994,Comedy|Sci-Fi,duplicate_item_id
+1685,886,"Life Less Ordinary, A (1997)",01-Jan-1997,Romance|Thriller,duplicate_item_id
+1686,48,Hoop Dreams (1994),01-Jan-1994,Documentary,duplicate_item_id

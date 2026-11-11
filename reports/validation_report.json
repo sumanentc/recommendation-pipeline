@@ -1,0 +1,533 @@
+{
+  "generated_at": "2026-11-11T05:07:49Z",
+  "config_hash": "f2571976c7d4",
+  "source": "movielens",
+  "tables": {
+    "users": {
+      "rows_in": 946,
+      "rows_valid": 943,
+      "rows_rejected": 3,
+      "reject_rate_pct": 0.317,
+      "rows_with_warnings": 21
+    },
+    "items": {
+      "rows_in": 1685,
+      "rows_valid": 1682,
+      "rows_rejected": 3,
+      "reject_rate_pct": 0.178,
+      "rows_with_warnings": 9
+    },
+    "interactions": {
+      "rows_in": 100400,
+      "rows_valid": 98400,
+      "rows_rejected": 2000,
+      "reject_rate_pct": 1.992,
+      "rows_with_warnings": 0
+    }
+  },
+  "rules": [
+    {
+      "table": "users",
+      "rule": "missing_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must not be NULL",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "users",
+      "rule": "invalid_type_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must be an integer",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "users",
+      "rule": "duplicate_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must be unique (first occurrence is kept)",
+      "action": "reject later duplicates",
+      "failed": 3,
+      "pct": 0.317,
+      "injected": 3
+    },
+    {
+      "table": "users",
+      "rule": "missing_age",
+      "column": "age",
+      "severity": "warning",
+      "description": "age should be present",
+      "action": "set NULL, impute (median)",
+      "failed": 5,
+      "pct": 0.529,
+      "injected": 5
+    },
+    {
+      "table": "users",
+      "rule": "invalid_type_age",
+      "column": "age",
+      "severity": "warning",
+      "description": "age must be numeric",
+      "action": "set NULL, impute (median)",
+      "failed": 2,
+      "pct": 0.211,
+      "injected": 2
+    },
+    {
+      "table": "users",
+      "rule": "age_out_of_range",
+      "column": "age",
+      "severity": "warning",
+      "description": "age must be within [5, 100]",
+      "action": "set NULL, impute (median)",
+      "failed": 4,
+      "pct": 0.423,
+      "injected": 4
+    },
+    {
+      "table": "users",
+      "rule": "missing_gender",
+      "column": "gender",
+      "severity": "warning",
+      "description": "gender should be present",
+      "action": "set to 'U' (unknown)",
+      "failed": 5,
+      "pct": 0.529,
+      "injected": 5
+    },
+    {
+      "table": "users",
+      "rule": "invalid_gender",
+      "column": "gender",
+      "severity": "warning",
+      "description": "gender must be one of ['M', 'F']",
+      "action": "set to 'U' (unknown)",
+      "failed": 2,
+      "pct": 0.211,
+      "injected": 2
+    },
+    {
+      "table": "users",
+      "rule": "missing_occupation",
+      "column": "occupation",
+      "severity": "warning",
+      "description": "occupation should be present",
+      "action": "set to 'unknown'",
+      "failed": 3,
+      "pct": 0.317,
+      "injected": 3
+    },
+    {
+      "table": "items",
+      "rule": "missing_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must not be NULL",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "items",
+      "rule": "invalid_type_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must be an integer",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "items",
+      "rule": "duplicate_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must be unique (first occurrence is kept)",
+      "action": "reject later duplicates",
+      "failed": 3,
+      "pct": 0.178,
+      "injected": 3
+    },
+    {
+      "table": "items",
+      "rule": "missing_title",
+      "column": "title",
+      "severity": "warning",
+      "description": "title should be present",
+      "action": "set to 'Unknown title'",
+      "failed": 4,
+      "pct": 0.237,
+      "injected": 4
+    },
+    {
+      "table": "items",
+      "rule": "invalid_release_date",
+      "column": "release_date",
+      "severity": "warning",
+      "description": "release_date must look like 01-Jan-1995",
+      "action": "set NULL, impute (median year)",
+      "failed": 5,
+      "pct": 0.297,
+      "injected": 5
+    },
+    {
+      "table": "items",
+      "rule": "missing_genres",
+      "column": "genres",
+      "severity": "warning",
+      "description": "genres should be present",
+      "action": "set to 'unknown'",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "interactions",
+      "rule": "missing_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must not be NULL",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "missing_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must not be NULL",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "interactions",
+      "rule": "missing_rating",
+      "column": "rating",
+      "severity": "error",
+      "description": "rating must not be NULL",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "missing_timestamp",
+      "column": "timestamp",
+      "severity": "error",
+      "description": "timestamp must not be NULL",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_type_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must be an integer",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_type_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must be an integer",
+      "action": "reject row",
+      "failed": 0,
+      "pct": 0.0,
+      "injected": null
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_type_rating",
+      "column": "rating",
+      "severity": "error",
+      "description": "rating must be numeric",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "invalid_type_timestamp",
+      "column": "timestamp",
+      "severity": "error",
+      "description": "timestamp must be numeric (unix seconds)",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "rating_out_of_range",
+      "column": "rating",
+      "severity": "error",
+      "description": "rating must be within [1, 5]",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "timestamp_out_of_range",
+      "column": "timestamp",
+      "severity": "error",
+      "description": "timestamp must be between 1990-01-01 and now",
+      "action": "reject row",
+      "failed": 400,
+      "pct": 0.398,
+      "injected": 400
+    },
+    {
+      "table": "interactions",
+      "rule": "duplicate_interaction",
+      "column": "user_id",
+      "severity": "error",
+      "description": "(user_id, item_id, timestamp) must be unique (first occurrence is kept)",
+      "action": "reject later duplicates",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "orphan_user_id",
+      "column": "user_id",
+      "severity": "error",
+      "description": "user_id must exist in the (valid) users table",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    },
+    {
+      "table": "interactions",
+      "rule": "orphan_item_id",
+      "column": "item_id",
+      "severity": "error",
+      "description": "item_id must exist in the (valid) items table",
+      "action": "reject row",
+      "failed": 200,
+      "pct": 0.199,
+      "injected": 200
+    }
+  ],
+  "examples": {
+    "duplicate_interaction": [
+      {
+        "source_line": 100002,
+        "column": "user_id",
+        "value": "527"
+      },
+      {
+        "source_line": 100003,
+        "column": "user_id",
+        "value": "790"
+      },
+      {
+        "source_line": 100004,
+        "column": "user_id",
+        "value": "833"
+      }
+    ],
+    "duplicate_item_id": [
+      {
+        "source_line": 1684,
+        "column": "item_id",
+        "value": "728"
+      },
+      {
+        "source_line": 1685,
+        "column": "item_id",
+        "value": "886"
+      },
+      {
+        "source_line": 1686,
+        "column": "item_id",
+        "value": "48"
+      }
+    ],
+    "duplicate_user_id": [
+      {
+        "source_line": 945,
+        "column": "user_id",
+        "value": "44"
+      },
+      {
+        "source_line": 946,
+        "column": "user_id",
+        "value": "837"
+      },
+      {
+        "source_line": 947,
+        "column": "user_id",
+        "value": "425"
+      }
+    ],
+    "invalid_type_rating": [
+      {
+        "source_line": 552,
+        "column": "rating",
+        "value": "good"
+      },
+      {
+        "source_line": 1588,
+        "column": "rating",
+        "value": "good"
+      },
+      {
+        "source_line": 2446,
+        "column": "rating",
+        "value": "five"
+      }
+    ],
+    "invalid_type_timestamp": [
+      {
+        "source_line": 533,
+        "column": "timestamp",
+        "value": "not_a_timestamp"
+      },
+      {
+        "source_line": 1304,
+        "column": "timestamp",
+        "value": "yesterday"
+      },
+      {
+        "source_line": 1977,
+        "column": "timestamp",
+        "value": "not_a_timestamp"
+      }
+    ],
+    "missing_rating": [
+      {
+        "source_line": 436,
+        "column": "rating",
+        "value": "<NULL>"
+      },
+      {
+        "source_line": 494,
+        "column": "rating",
+        "value": "<NULL>"
+      },
+      {
+        "source_line": 800,
+        "column": "rating",
+        "value": "<NULL>"
+      }
+    ],
+    "missing_user_id": [
+      {
+        "source_line": 121,
+        "column": "user_id",
+        "value": "<NULL>"
+      },
+      {
+        "source_line": 233,
+        "column": "user_id",
+        "value": "<NULL>"
+      },
+      {
+        "source_line": 564,
+        "column": "user_id",
+        "value": "<NULL>"
+      }
+    ],
+    "orphan_item_id": [
+      {
+        "source_line": 708,
+        "column": "item_id",
+        "value": "2734"
+      },
+      {
+        "source_line": 733,
+        "column": "item_id",
+        "value": "2786"
+      },
+      {
+        "source_line": 1359,
+        "column": "item_id",
+        "value": "2735"
+      }
+    ],
+    "orphan_user_id": [
+      {
+        "source_line": 181,
+        "column": "user_id",
+        "value": "2010"
+      },
+      {
+        "source_line": 423,
+        "column": "user_id",
+        "value": "1976"
+      },
+      {
+        "source_line": 541,
+        "column": "user_id",
+        "value": "2105"
+      }
+    ],
+    "rating_out_of_range": [
+      {
+        "source_line": 32,
+        "column": "rating",
+        "value": "6"
+      },
+      {
+        "source_line": 735,
+        "column": "rating",
+        "value": "7"
+      },
+      {
+        "source_line": 1516,
+        "column": "rating",
+        "value": "0"
+      }
+    ],
+    "timestamp_out_of_range": [
+      {
+        "source_line": 405,
+        "column": "timestamp",
+        "value": "4102444800"
+      },
+      {
+        "source_line": 628,
+        "column": "timestamp",
+        "value": "4102444800"
+      },
+      {
+        "source_line": 958,
+        "column": "timestamp",
+        "value": "4102444800"
+      }
+    ]
+  },
+  "gate": {
+    "interaction_reject_rate_pct": 1.992,
+    "max_error_rate_pct": 5.0,
+    "min_valid_rows": 1000,
+    "passed": true
+  }
+}

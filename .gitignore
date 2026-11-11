@@ -1,0 +1,43 @@
+# --- Python / environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- macOS
+.DS_Store
+
+# --- Pipeline data (re-created by the pipeline; keep only the folder structure)
+data/raw/ml-100k.zip
+data/raw/*
+data/processed/*
+data/features/*
+!data/*/.gitkeep
+# ...but DO keep the error dataset as evidence of the validation stage
+!data/errors/
+data/errors/*
+!data/errors/.gitkeep
+!data/errors/rejected_*.csv
+!data/errors/validation_issues.csv
+
+# --- Models + experiment tracking (local, large, re-created by the pipeline)
+models/*.joblib
+# (contains an absolute local path of the machine that ran the pipeline)
+models/training_manifest.json
+mlruns/
+mlartifacts/
+mlflow.db
+.prefect/
+
+# --- Intermediate report rendering (the PDF is the deliverable)
+reports/*.html
+
+# --- Logs
+logs/*
+!logs/.gitkeep
+
+# --- Editors
+.idea/
+.vscode/

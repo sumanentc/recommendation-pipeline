@@ -1,0 +1,95 @@
+# =============================================================================
+# Central configuration for the recommendation pipeline.
+# Every stage reads its settings from here -> one place to change behaviour,
+# and the config hash is stored in the run manifest for reproducibility.
+# =============================================================================
+
+project:
+  name: recommendation-pipeline
+  seed: 42                      # global random seed (fault injection, SVD, ...)
+
+paths:                          # relative to the repository root
+  raw: data/raw
+  processed: data/processed
+  features: data/features
+  errors: data/errors
+  models: models
+  reports: reports
+  docs: docs
+
+# ----------------------------------------------------------------------------
+# 1. Data ingestion
+# ----------------------------------------------------------------------------
+ingestion:
+  source: movielens             # movielens | synthetic
+  movielens_url: https://files.grouplens.org/datasets/movielens/ml-100k.zip
+  fallback_to_synthetic: true   # if the download fails, generate synthetic data instead
+  synthetic:                    # only used when source == synthetic (or fallback)
+    n_users: 600
+    n_items: 400
+    n_interactions: 30000
+  # MovieLens is very clean, so to DEMONSTRATE the validation stage we inject a
+  # small, reproducible number of corrupt records into the raw files.
+  # Set inject_faults: false to run on the untouched data.
+  inject_faults: true
+  fault_rate: 0.002             # fraction of interaction rows per fault type
+
+# ----------------------------------------------------------------------------
+# 2. Data validation
+# ----------------------------------------------------------------------------
+validation:
+  rating_min: 1
+  rating_max: 5
+  min_timestamp: "1990-01-01"   # earlier timestamps are invalid
+  max_timestamp: now            # "now" or a date; later timestamps are invalid
+  age_min: 5
+  age_max: 100
+  valid_genders: ["M", "F"]
+  max_error_rate: 0.05          # QUALITY GATE: stop the pipeline if > 5 % of interactions are rejected
+  min_valid_rows: 1000
+
+# ----------------------------------------------------------------------------
+# 3. Preparation (cleaning + time-based split)
+# ----------------------------------------------------------------------------
+preparation:
+  split_strategy: per_user      # per_user (latest x % of each user's history) | global (single cut-off date)
+  test_fraction: 0.2
+  min_user_interactions_for_test: 5   # users with fewer interactions stay entirely in train
+
+# ----------------------------------------------------------------------------
+# 4. Feature management
+# ----------------------------------------------------------------------------
+features:
+  positive_threshold: 4         # rating >= 4 counts as "liked"
+  bayes_prior: 10               # damping strength for the Bayesian item average
+  age_bins: [0, 18, 25, 35, 45, 55, 200]
+  age_labels: ["<18", "18-24", "25-34", "35-44", "45-54", "55+"]
+
+# ----------------------------------------------------------------------------
+# 5. Model training
+# ----------------------------------------------------------------------------
+models:
+  popularity: {}
+  svd:
+    n_factors: 32               # ranking head  (TruncatedSVD / PureSVD)
+    rating_factors: 16          # rating head   (biased matrix factorisation, ALS)
+    als_reg: 10.0
+    als_iters: 12
+  hybrid:
+    n_factors: 32
+    rating_factors: 16
+    als_reg: 10.0
+    als_iters: 12
+    content_weight: 0.2         # 0 = pure collaborative filtering, 1 = pure genre affinity
+
+mlflow:
+  tracking_uri: sqlite:///mlflow.db   # resolved relative to the repo root
+  experiment_name: recommendation-pipeline
+
+# ----------------------------------------------------------------------------
+# 6. Evaluation
+# ----------------------------------------------------------------------------
+evaluation:
+  k_values: [5, 10]
+  primary_k: 10
+  relevance_threshold: 4        # a test item is "relevant" if rating >= 4
