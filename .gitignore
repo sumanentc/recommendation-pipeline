@@ -33,6 +33,7 @@ mlflow.db
 
 # --- Intermediate report rendering (the PDF is the deliverable)
 reports/*.html
+reports/final_report_draft.md
 
 # --- Logs
 logs/*
