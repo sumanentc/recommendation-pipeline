@@ -1,0 +1,36 @@
+{
+  "tracking_uri": "sqlite:////Users/sumandas/Public/workspace/recommendation-pipeline/mlflow.db",
+  "models": {
+    "popularity": {
+      "run_id": "7ecb50310a4e4b66aad5404953b5afc7",
+      "path": "models/popularity.joblib",
+      "params": {},
+      "fit_seconds": 0.002
+    },
+    "svd": {
+      "run_id": "938283ed589c46f3a773158fc7ca4640",
+      "path": "models/svd.joblib",
+      "params": {
+        "n_factors": 32,
+        "rating_factors": 16,
+        "als_reg": 10.0,
+        "als_iters": 12,
+        "seed": 42
+      },
+      "fit_seconds": 0.63
+    },
+    "hybrid": {
+      "run_id": "a9088d202a2a4977af0c655fa2f3e4d1",
+      "path": "models/hybrid.joblib",
+      "params": {
+        "n_factors": 32,
+        "rating_factors": 16,
+        "als_reg": 10.0,
+        "als_iters": 12,
+        "seed": 42,
+        "content_weight": 0.2
+      },
+      "fit_seconds": 0.62
+    }
+  }
+}
